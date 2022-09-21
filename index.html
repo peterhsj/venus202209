@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Fixed top navbar example · Bootstrap v5.2</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbar-fixed/"> -->
+
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-top-fixed.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="wrapper">
+    <div class="kv-header">
+      <nav class="navbar navbar-expand-md fixed-top bg-light rounded">
+        <div class="container-fluid navbar__custom--height">
+          <!-- <a class="" href="#">Fixed navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="https://fakeimg.pl/150x30/#ddd"></a>
+          <a class="btn__custom btn__custom--gray" href="#">預約解放</a>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">孕期預訂曲線回歸</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">美型雕塑穿回S號</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">女神穿搭好評推薦</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">久坐大屁股OUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">動靜都能塑</a>
+              </li>
+            </ul>      
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+    <div class="s1">
+      <div class="aos">
+        <img src="https://fakeimg.pl/375x263/DDD" class="img-fluid">
+      </div>
+      <div class="content">
+        <p class="title">穿上解放</p>
+        <p class="subTitle">BE SUPPORTED BE FREE</p>
+        <p>10/1 - 10/31 <b>首購半價</b> 50% OFF</p>
+      </div>
+      <div class="airfit">
+        <img src="https://fakeimg.pl/150x45/DDD" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="s2">
+      <div class="promote">
+        <div class="promote__item promote__item--left">
+          <p class="title">獨享加倍送</p>
+          <p>獨享買衣送衣(配件)<br>滿額 $5,000 送 $500</p>
+        </div>
+        <div class="promote__item promote__item--right">
+          <p class="title">試穿送好禮</p>
+          <p>送 $2000 商品劵<br>抽 iRobot i7掃地機</p>
+        </div>
+      </div>
+      <div class="promote__note">
+        <ol>
+          <li>首購半價不享有滿$5000送$500及2000元商品券折抵。</li>
+          <li>滿5000送500僅限特定通路(限0800,旗艦店及雲嘉)。</li>
+          <li>各項優惠優惠方案已店內公告為主，維娜斯保有最終解釋權。</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="s3">
+      <div>
+        <img src="https://fakeimg.pl/375x263/999999" class="img-fluid">
+      </div>
+      <div class="formHeader">
+        <span class="title">APPOINTMENT</span>
+        <span class="subText">
+          <span>預約試穿</span>
+          <span>享塑美型</span>
+        </span>
+      </div>
+      <form class="kv-formbox" id="venussecret_form" enctype="multipart/form-data" method="POST"
+        action="">
+        <div class="form-content">
+          <div class="needsWrap">
+            <div class="checkWrap">
+              <input type="checkbox" class="filled-in" id="f1a" name="require" value="產後美型">
+              <label for="f1a">產後美型</label>
+            </div>
+            <div class="checkWrap">
+              <input type="checkbox" class="filled-in" id="f1b" name="require" value="窈窕曲線">
+              <label for="f1b">窈窕曲線</label>
+            </div>
+            <div class="checkWrap">
+              <input type="checkbox" class="filled-in" id="f1c" name="require" value="產前諮詢">
+              <label for="f1c">產前諮詢</label>
+            </div>
+            <div class="checkWrap">
+              <input type="checkbox" class="filled-in" id="f1d" name="require" value="折扣/價格諮詢">
+              <label for="f1d">折扣/價格諮詢</label>
+            </div>
+          </div>
+          <div class="form-column">
+            <input name="fullname" type="text" id="fullname" placeholder="請填寫姓名" onfocus="cleartext(this)"
+              onblur="resettext(this)" required="">
+          </div>
+          <div class="form-column">
+            <input name="tel" type="text" id="tel" placeholder="請填寫電話" required="" onfocus="cleartext(this)"
+              onblur="resettext(this)">
+          </div>
+          <div class="form-column">
+            <p class="select-group">
+              <span data-role="county" data-style="text"><select name="city" id="city" class="text">
+                  <option value="">選擇居住縣市</option>
+                  <option value="基隆市">基隆市</option>
+                  <option value="台北市">台北市</option>
+                  <option value="新北市">新北市</option>
+                  <option value="宜蘭縣">宜蘭縣</option>
+                  <option value="新竹市">新竹市</option>
+                  <option value="新竹縣">新竹縣</option>
+                  <option value="桃園縣">桃園縣</option>
+                  <option value="苗栗縣">苗栗縣</option>
+                  <option value="台中市">台中市</option>
+                  <option value="彰化縣">彰化縣</option>
+                  <option value="南投縣">南投縣</option>
+                  <option value="嘉義市">嘉義市</option>
+                  <option value="嘉義縣">嘉義縣</option>
+                  <option value="雲林縣">雲林縣</option>
+                  <option value="台南市">台南市</option>
+                  <option value="高雄市">高雄市</option>
+                  <option value="屏東縣">屏東縣</option>
+                  <option value="台東縣">台東縣</option>
+                  <option value="花蓮縣">花蓮縣</option>
+                  <option value="金門縣">金門縣</option>
+                  <option value="連江縣">連江縣</option>
+                  <option value="澎湖縣">澎湖縣</option>
+                </select></span>
+            </p>
+          </div>
+          <div class="form-column">
+            <p class="select-group">
+              <span data-role="district" data-style="text"><select name="area" id="area" class="text">
+                  <option value="">選擇居住地區</option>
+                </select></span>
+              <span data-role="zipcode" data-style="zipcode" style="display:none;"><input type="text" name="zipcode"
+                  id="zipcode" class="zipcode"></span>
+            </p>
+          </div>
+          <div class="privacyWrap checkWrap">
+            <input name="agree" type="checkbox" class="filled-in" id="agree" checked="">
+            <label for="agree">我已詳閱並同意<a href="http://www.venussecret.com.tw/about/privacy.php"
+                target="_blank">隱私權政策</a>，並願意收到維娜斯的最新活動與資訊</label>
+          </div>
+        </div>
+        <div class="form-btn">
+          <a id="submit_btn" href="javascript:;" onclick="javascript:checkForm(); return false;" class="btn">
+            <h2>預約試穿</h2>
+          </a>
+        </div>
+      </form>
+
+
+
+    </div>
+  </div>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>     
+  </body>
+</html>
