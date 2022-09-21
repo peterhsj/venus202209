@@ -38,6 +38,11 @@
   color: #ffffff;
 }
 .btn__custom--white {
+  padding: 0.475rem 3rem;
+  font-family: 微軟正黑體;
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 0.475rem;
   background-color: #ffffff;
   color: #333333;
 }
@@ -144,10 +149,10 @@
   border-bottom: 1px solid #FFFFFF;
 }
 .s3 .formHeader .title {
-  font-size: 1.375rem;
+  font-size: 1.437rem;
   font-weight: bolder;
   font-family: Arial;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
 }
 .s3 .formHeader .subText {
   font-size: 0.9rem;
@@ -156,15 +161,56 @@
 .s3 .needsWrap {
   margin-bottom: 1rem;
 }
+.s3 .needsWrap .label-custom {
+  font-size: 0.925rem;
+  font-weight: bolder;
+}
 .s3 .kv-formbox {
   padding: 40px 30px 5px;
 }
 .s3 .form-column {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.6rem;
+}
+.s3 .form-column .form-select {
+  color: #666666;
+  font-size: 0.925rem;
 }
 .s3 .form-column .field-custom {
+  margin-bottom: 0.1rem;
   border-radius: 0;
   border-width: 0 0 1px 0;
   border-color: #FFFFFF;
   background-color: transparent;
+}
+.s3 .form-column .field-custom::-moz-placeholder {
+  color: #666666;
+  font-size: 0.925rem;
+}
+.s3 .form-column .field-custom:-ms-input-placeholder {
+  color: #666666;
+  font-size: 0.925rem;
+}
+.s3 .form-column .field-custom::placeholder {
+  color: #666666;
+  font-size: 0.925rem;
+}
+.s3 .form-column .field-custom--small {
+  width: calc(100% - 2.4rem);
+  padding-left: 0.2rem;
+  padding-top: 0.2rem;
+  font-size: 0.75rem;
+  font-weight: bolder;
+  letter-spacing: 0.025em;
+}
+.s3 .form-column .field-custom--small a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: #333333;
+}
+.s3 .form-column .field-custom--small a:hover {
+  color: #666666;
+}
+.s3 .form-btn {
+  padding: 2rem 0 2rem;
+  text-align: center;
 }/*# sourceMappingURL=custom.css.map */
