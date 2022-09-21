@@ -97,10 +97,10 @@
   flex-grow: 1;
 }
 .s2 .promote__item--left {
-  padding-left: 20px;
+  padding-left: 1.5rem;
 }
 .s2 .promote__item--right {
-  padding-right: 20px;
+  padding-right: 1.5rem;
 }
 .s2 .promote__item p {
   margin-bottom: 1rem;
@@ -119,6 +119,8 @@
 .s2 .promote__note {
   margin-bottom: 1rem;
   margin-top: 0.5rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
   font-size: 0.7rem;
   line-height: 1.5;
   font-weight: 700;
@@ -132,7 +134,9 @@
   background-color: #DBDBDB;
 }
 .s3 .formHeader {
-  padding: 40px 20px 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 40px 0 5px;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -148,4 +152,19 @@
 .s3 .formHeader .subText {
   font-size: 0.9rem;
   font-weight: bolder;
+}
+.s3 .needsWrap {
+  margin-bottom: 1rem;
+}
+.s3 .kv-formbox {
+  padding: 40px 30px 5px;
+}
+.s3 .form-column {
+  padding-bottom: 0.5rem;
+}
+.s3 .form-column .field-custom {
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+  border-color: #FFFFFF;
+  background-color: transparent;
 }/*# sourceMappingURL=custom.css.map */

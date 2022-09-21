@@ -51,7 +51,7 @@
     </div>
     <div class="s1">
       <div class="aos">
-        <img src="https://fakeimg.pl/375x263/DDD" class="img-fluid">
+        <img src="https://fakeimg.pl/375x263/DDD" class="img-fluid"  style="width: 100%">
       </div>
       <div class="content">
         <p class="title">穿上解放</p>
@@ -85,7 +85,7 @@
 
     <div class="s3">
       <div>
-        <img src="https://fakeimg.pl/375x263/999999" class="img-fluid">
+        <img src="https://fakeimg.pl/375x263/999999" style="width: 100%" class="img-fluid">
       </div>
       <div class="formHeader">
         <span class="title">APPOINTMENT</span>
@@ -94,76 +94,74 @@
           <span>享塑美型</span>
         </span>
       </div>
-      <form class="kv-formbox" id="venussecret_form" enctype="multipart/form-data" method="POST"
-        action="">
+      <form class="kv-formbox" id="venussecret_form" enctype="multipart/form-data" method="POST" action="">
         <div class="form-content">
           <div class="needsWrap">
-            <div class="checkWrap">
-              <input type="checkbox" class="filled-in" id="f1a" name="require" value="產後美型">
-              <label for="f1a">產後美型</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="f1a" name="require" value="產後美型">
+              <label class="form-check-label label-custom" for="f1a">產後美型</label>
             </div>
-            <div class="checkWrap">
-              <input type="checkbox" class="filled-in" id="f1b" name="require" value="窈窕曲線">
-              <label for="f1b">窈窕曲線</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="f1b" name="require" value="窈窕曲線">
+              <label class="form-check-label label-custom" for="f1b">窈窕曲線</label>
             </div>
-            <div class="checkWrap">
-              <input type="checkbox" class="filled-in" id="f1c" name="require" value="產前諮詢">
-              <label for="f1c">產前諮詢</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="f1c" name="require" value="產前諮詢">
+              <label class="form-check-label label-custom" for="f1c">產前諮詢</label>
             </div>
-            <div class="checkWrap">
-              <input type="checkbox" class="filled-in" id="f1d" name="require" value="折扣/價格諮詢">
-              <label for="f1d">折扣/價格諮詢</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="f1d" name="require" value="折扣/價格諮詢">
+              <label class="form-check-label label-custom" for="f1d">折扣/價格諮詢</label>
             </div>
           </div>
           <div class="form-column">
-            <input name="fullname" type="text" id="fullname" placeholder="請填寫姓名" onfocus="cleartext(this)"
-              onblur="resettext(this)" required="">
+            <input name="fullname" id="fullname" type="text" class="form-control field-custom" placeholder="請填寫姓名"required=""onfocus="cleartext(this)" onblur="resettext(this)" >
           </div>
           <div class="form-column">
-            <input name="tel" type="text" id="tel" placeholder="請填寫電話" required="" onfocus="cleartext(this)"
-              onblur="resettext(this)">
+            <input name="tel" id="tel" type="text" class="form-control field-custom" placeholder="請填寫電話" required="" onfocus="cleartext(this)" onblur="resettext(this)">
           </div>
           <div class="form-column">
-            <p class="select-group">
-              <span data-role="county" data-style="text"><select name="city" id="city" class="text">
-                  <option value="">選擇居住縣市</option>
-                  <option value="基隆市">基隆市</option>
-                  <option value="台北市">台北市</option>
-                  <option value="新北市">新北市</option>
-                  <option value="宜蘭縣">宜蘭縣</option>
-                  <option value="新竹市">新竹市</option>
-                  <option value="新竹縣">新竹縣</option>
-                  <option value="桃園縣">桃園縣</option>
-                  <option value="苗栗縣">苗栗縣</option>
-                  <option value="台中市">台中市</option>
-                  <option value="彰化縣">彰化縣</option>
-                  <option value="南投縣">南投縣</option>
-                  <option value="嘉義市">嘉義市</option>
-                  <option value="嘉義縣">嘉義縣</option>
-                  <option value="雲林縣">雲林縣</option>
-                  <option value="台南市">台南市</option>
-                  <option value="高雄市">高雄市</option>
-                  <option value="屏東縣">屏東縣</option>
-                  <option value="台東縣">台東縣</option>
-                  <option value="花蓮縣">花蓮縣</option>
-                  <option value="金門縣">金門縣</option>
-                  <option value="連江縣">連江縣</option>
-                  <option value="澎湖縣">澎湖縣</option>
-                </select></span>
-            </p>
+            <span data-role="county" data-style="text">
+              <select name="city" id="city" class="form-select field-custom">
+                <option value="">選擇居住縣市</option>
+                <option value="基隆市">基隆市</option>
+                <option value="台北市">台北市</option>
+                <option value="新北市">新北市</option>
+                <option value="宜蘭縣">宜蘭縣</option>
+                <option value="新竹市">新竹市</option>
+                <option value="新竹縣">新竹縣</option>
+                <option value="桃園縣">桃園縣</option>
+                <option value="苗栗縣">苗栗縣</option>
+                <option value="台中市">台中市</option>
+                <option value="彰化縣">彰化縣</option>
+                <option value="南投縣">南投縣</option>
+                <option value="嘉義市">嘉義市</option>
+                <option value="嘉義縣">嘉義縣</option>
+                <option value="雲林縣">雲林縣</option>
+                <option value="台南市">台南市</option>
+                <option value="高雄市">高雄市</option>
+                <option value="屏東縣">屏東縣</option>
+                <option value="台東縣">台東縣</option>
+                <option value="花蓮縣">花蓮縣</option>
+                <option value="金門縣">金門縣</option>
+                <option value="連江縣">連江縣</option>
+                <option value="澎湖縣">澎湖縣</option>
+              </select>
+            </span>
           </div>
           <div class="form-column">
-            <p class="select-group">
-              <span data-role="district" data-style="text"><select name="area" id="area" class="text">
-                  <option value="">選擇居住地區</option>
-                </select></span>
-              <span data-role="zipcode" data-style="zipcode" style="display:none;"><input type="text" name="zipcode"
-                  id="zipcode" class="zipcode"></span>
-            </p>
+            <span data-role="district" data-style="text">
+              <select name="area" id="area" class="form-select field-custom">
+                <option value="">選擇居住地區</option>
+              </select>
+            </span>
+            <span data-role="zipcode" data-style="zipcode" style="display:none;">
+              <input type="text" name="zipcode" id="zipcode" class="zipcode">
+            </span>
           </div>
-          <div class="privacyWrap checkWrap">
-            <input name="agree" type="checkbox" class="filled-in" id="agree" checked="">
-            <label for="agree">我已詳閱並同意<a href="http://www.venussecret.com.tw/about/privacy.php"
+          <div class="form-check privacyWrap">
+            <input name="agree" id="agree" type="checkbox" class="form-check-input" checked="">
+            <label for="agree" class="form-check-label label-custom">我已詳閱並同意<a href="http://www.venussecret.com.tw/about/privacy.php"
                 target="_blank">隱私權政策</a>，並願意收到維娜斯的最新活動與資訊</label>
           </div>
         </div>
