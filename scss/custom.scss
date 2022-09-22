@@ -79,6 +79,11 @@ font-family: system-ui,
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include screen('desktop') {
+    margin-left: 60px;
+    padding: 4rem 0;
+    align-items: flex-start;
+  }
   &--form {
     padding: 2.5rem 0 0.3125px;
     flex-direction: row;
@@ -91,6 +96,10 @@ font-family: system-ui,
     font-weight: bolder;
     font-family: Arial;
     letter-spacing: 0.025em;
+    @include screen('desktop') {
+      font-size: 4rem;
+    letter-spacing: 0em;
+    }
   }
 
   .subText {
