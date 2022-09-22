@@ -1,3 +1,5 @@
+@import 'media-query.scss';
+
 * {
 font-family: system-ui,
   -apple-system,
@@ -54,9 +56,9 @@ font-family: system-ui,
     }
     // 白底黑字，按鈕加大
     &--white {
-      padding: 0.475rem 3rem;
+      padding: 0.5rem 3.2rem;
       font-family: 微軟正黑體;
-      font-size: 1rem;
+      font-size: 1.3125rem;
       font-weight: bolder;
       border-radius: 0.475rem;
       background-color: #ffffff;
@@ -98,7 +100,7 @@ font-family: system-ui,
 }
 
 .item-footer {
-  padding: 2rem 0 2rem;
+  padding: 2.5rem 0 2.5rem;
   text-align: center;
 }
 
@@ -128,6 +130,9 @@ $gutter-x:  4rem;
     &--gray {
       background-color: #EEEEEE;
     }
+    &--noPadding {
+      padding: 0.5rem;
+    }
     div {
       flex-grow: 1;
       &.spec {
@@ -146,6 +151,15 @@ $gutter-x:  4rem;
       letter-spacing: 0.125em;
       &--spacing {
         letter-spacing: 0.5em;
+      }
+      a {
+        padding-left: 0.5rem;
+        text-decoration: none;
+        color: #333333;
+
+        &:hover {
+          color: #666666;
+        }
       }
     }
     .title {
@@ -208,12 +222,11 @@ $gutter-x:  4rem;
     }
   }
 }
-// 
+// 服務
 .service {
   &__wrapper {
     display: flex;
     flex-direction: column;
-    background-color: #EEEEEE;
   }
   &__item {
     padding: 0 2rem 0;
@@ -222,11 +235,26 @@ $gutter-x:  4rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    @include screen('desktop') {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &__info {
     width: 50%;
     padding-top: 2.5rem;
     text-align: center;
+    @include screen('desktop') {
+      width: 25%;
+    }
+    img {
+      width: 100px;
+      height: 100%;
+      @include screen('desktop') {
+        width: 150px;
+      }
+    }
     p {
       margin-bottom: 0.3rem;
       margin-top: 1.3rem;
@@ -235,6 +263,31 @@ $gutter-x:  4rem;
       letter-spacing: 0.05em;
       font-weight: bolder;
     }
+  }
+}
+.social {
+  padding: 3rem 3rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.tel {
+  padding: 1rem 0 1rem;
+  display: block;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+.shop {
+  padding: 0 2.5rem;
+  .title {
+    font-weight: bolder;
+  }
+}
+
+.kv {
+  &__footer {
+    background-color: #FFFFFF;
   }
 }
 
@@ -384,5 +437,11 @@ $gutter-x:  4rem;
   background-color: #EEEEEE;
 }
 .s7 {
-  border-top: 1px solid #FFFFFF
+  background-color: #EEEEEE;
+  border-top: 1px solid #000000;
+}
+.s8 {
+  padding-bottom: 2.5rem;
+  background-color: #EEEEEE;
+  border-top: 1px solid #000000;
 }

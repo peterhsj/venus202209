@@ -38,9 +38,9 @@
   color: #ffffff;
 }
 .btn__custom--white {
-  padding: 0.475rem 3rem;
+  padding: 0.5rem 3.2rem;
   font-family: 微軟正黑體;
-  font-size: 1rem;
+  font-size: 1.3125rem;
   font-weight: bolder;
   border-radius: 0.475rem;
   background-color: #ffffff;
@@ -78,7 +78,7 @@
 }
 
 .item-footer {
-  padding: 2rem 0 2rem;
+  padding: 2.5rem 0 2.5rem;
   text-align: center;
 }
 
@@ -108,6 +108,9 @@
 .carousel__figcaption--gray {
   background-color: #EEEEEE;
 }
+.carousel__figcaption--noPadding {
+  padding: 0.5rem;
+}
 .carousel__figcaption div {
   flex-grow: 1;
 }
@@ -127,6 +130,14 @@
 }
 .carousel__figcaption .subTitle--spacing {
   letter-spacing: 0.5em;
+}
+.carousel__figcaption .subTitle a {
+  padding-left: 0.5rem;
+  text-decoration: none;
+  color: #333333;
+}
+.carousel__figcaption .subTitle a:hover {
+  color: #666666;
 }
 .carousel__figcaption .title {
   margin-bottom: 0;
@@ -189,7 +200,6 @@
 .service__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #EEEEEE;
 }
 .service__item {
   padding: 0 2rem 0;
@@ -199,10 +209,31 @@
   align-items: center;
   justify-content: space-around;
 }
+@media only screen and (min-width: 768px) {
+  .service__item {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .service__info {
   width: 50%;
   padding-top: 2.5rem;
   text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .service__info {
+    width: 25%;
+  }
+}
+.service__info img {
+  width: 100px;
+  height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .service__info img {
+    width: 150px;
+  }
 }
 .service__info p {
   margin-bottom: 0.3rem;
@@ -211,6 +242,32 @@
   line-height: 1.5;
   letter-spacing: 0.05em;
   font-weight: bolder;
+}
+
+.social {
+  padding: 3rem 3rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tel {
+  padding: 1rem 0 1rem;
+  display: block;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.shop {
+  padding: 0 2.5rem;
+}
+.shop .title {
+  font-weight: bolder;
+}
+
+.kv__footer {
+  background-color: #FFFFFF;
 }
 
 .s1 {
@@ -370,5 +427,12 @@
 }
 
 .s7 {
-  border-top: 1px solid #FFFFFF;
+  background-color: #EEEEEE;
+  border-top: 1px solid #000000;
+}
+
+.s8 {
+  padding-bottom: 2.5rem;
+  background-color: #EEEEEE;
+  border-top: 1px solid #000000;
 }/*# sourceMappingURL=custom.css.map */
