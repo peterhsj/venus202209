@@ -50,7 +50,8 @@
       </nav>
     </div>
     <div class="s1">
-      <div class="aos">
+      <!-- 輪播 -->
+      <div class="carousel">
         <img src="https://fakeimg.pl/375x263/DDD" class="img-fluid"  style="width: 100%">
       </div>
       <div class="content">
@@ -87,93 +88,237 @@
       <div>
         <img src="https://fakeimg.pl/375x263/999999" style="width: 100%" class="img-fluid">
       </div>
-      <div class="formHeader">
-        <span class="title">APPOINTMENT</span>
-        <span class="subText">
-          <span>預約試穿</span>
-          <span>享塑美型</span>
-        </span>
+      <div>
+        <div class="item-header item-header--form">
+          <span class="title">APPOINTMENT</span>
+          <span class="subText">
+            <span>預約試穿</span>
+            <span>享塑美型</span>
+          </span>
+        </div>
+        <!-- 預約表單 -->
+        <form class="kv-formbox" id="venussecret_form" enctype="multipart/form-data" method="POST" action="">
+          <div class="form-content">
+            <div class="needsWrap">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="f1a" name="require" value="產後美型">
+                <label class="form-check-label label-custom" for="f1a">產後美型</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="f1b" name="require" value="窈窕曲線">
+                <label class="form-check-label label-custom" for="f1b">窈窕曲線</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="f1c" name="require" value="產前諮詢">
+                <label class="form-check-label label-custom" for="f1c">產前諮詢</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="f1d" name="require" value="折扣/價格諮詢">
+                <label class="form-check-label label-custom" for="f1d">價格諮詢</label>
+              </div>
+            </div>
+            <div class="form-column">
+              <input name="fullname" id="fullname" type="text" class="form-control field-custom" placeholder="請填寫姓名"required=""onfocus="cleartext(this)" onblur="resettext(this)" >
+            </div>
+            <div class="form-column">
+              <input name="tel" id="tel" type="text" class="form-control field-custom" placeholder="請填寫電話" required="" onfocus="cleartext(this)" onblur="resettext(this)">
+            </div>
+            <div class="form-column">
+              <span data-role="county" data-style="text">
+                <select name="city" id="city" class="form-select field-custom">
+                  <option value="">選擇居住縣市</option>
+                  <option value="基隆市">基隆市</option>
+                  <option value="台北市">台北市</option>
+                  <option value="新北市">新北市</option>
+                  <option value="宜蘭縣">宜蘭縣</option>
+                  <option value="新竹市">新竹市</option>
+                  <option value="新竹縣">新竹縣</option>
+                  <option value="桃園縣">桃園縣</option>
+                  <option value="苗栗縣">苗栗縣</option>
+                  <option value="台中市">台中市</option>
+                  <option value="彰化縣">彰化縣</option>
+                  <option value="南投縣">南投縣</option>
+                  <option value="嘉義市">嘉義市</option>
+                  <option value="嘉義縣">嘉義縣</option>
+                  <option value="雲林縣">雲林縣</option>
+                  <option value="台南市">台南市</option>
+                  <option value="高雄市">高雄市</option>
+                  <option value="屏東縣">屏東縣</option>
+                  <option value="台東縣">台東縣</option>
+                  <option value="花蓮縣">花蓮縣</option>
+                  <option value="金門縣">金門縣</option>
+                  <option value="連江縣">連江縣</option>
+                  <option value="澎湖縣">澎湖縣</option>
+                </select>
+              </span>
+            </div>
+            <div class="form-column">
+              <span data-role="district" data-style="text">
+                <select name="area" id="area" class="form-select field-custom">
+                  <option value="">選擇居住地區</option>
+                </select>
+              </span>
+              <span data-role="zipcode" data-style="zipcode" style="display:none;">
+                <input type="text" name="zipcode" id="zipcode" class="zipcode">
+              </span>
+            </div>
+            <div class="form-column">
+              <input name="agree" id="agree" type="checkbox" class="form-check-input" checked="">
+              <label for="agree" class="form-check-label field-custom--small">我已詳閱並同意<a href="http://www.venussecret.com.tw/about/privacy.php" target="_blank">隱私權政策</a>，並願意收到維娜斯的最新活動與資訊</label>
+            </div>
+          </div>
+          <div class="item-footer">
+            <a id="submit_btn" class="btn__custom btn__custom--white" href="javascript:;" onclick="javascript:checkForm(); return false;">
+              預約解放
+            </a>
+          </div>
+        </form>
       </div>
-      <form class="kv-formbox" id="venussecret_form" enctype="multipart/form-data" method="POST" action="">
-        <div class="form-content">
-          <div class="needsWrap">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="f1a" name="require" value="產後美型">
-              <label class="form-check-label label-custom" for="f1a">產後美型</label>
+    </div>
+    <div class="s4">
+      <div class="carousel carousel__wrapper carousel__wrapper--gutter">
+        <div class="item-header">
+          <span class="title">EXCLUSIVE OFFER</span>
+          <span class="subText">周年慶特惠組</span>
+        </div>
+        <!-- 輪播 -->
+        <div class="carousel">
+          <div>
+            <img src="https://fakeimg.pl/375x263/999999" style="width: 100%">
+          </div>
+          <div class="carousel__figcaption carousel__figcaption--paddingBottom">
+            <div>
+              <img src="https://fakeimg.pl/50x65/999999" style="width: 100%">
             </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="f1b" name="require" value="窈窕曲線">
-              <label class="form-check-label label-custom" for="f1b">窈窕曲線</label>
+            <div class="spec spec--padding">
+              <p class="subTitle subTitle--spacing">輕‧薄‧透‧舒</p>
+              <p class="title title--marginBottom">Philia 560 Den及膝款</p>
+              <p class="discount">
+                現省＄9,000
+                <br>
+                腰、腹、臀曲線回歸
+              </p>
             </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="f1c" name="require" value="產前諮詢">
-              <label class="form-check-label label-custom" for="f1c">產前諮詢</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="f1d" name="require" value="折扣/價格諮詢">
-              <label class="form-check-label label-custom" for="f1d">價格諮詢</label>
-            </div>
-          </div>
-          <div class="form-column">
-            <input name="fullname" id="fullname" type="text" class="form-control field-custom" placeholder="請填寫姓名"required=""onfocus="cleartext(this)" onblur="resettext(this)" >
-          </div>
-          <div class="form-column">
-            <input name="tel" id="tel" type="text" class="form-control field-custom" placeholder="請填寫電話" required="" onfocus="cleartext(this)" onblur="resettext(this)">
-          </div>
-          <div class="form-column">
-            <span data-role="county" data-style="text">
-              <select name="city" id="city" class="form-select field-custom">
-                <option value="">選擇居住縣市</option>
-                <option value="基隆市">基隆市</option>
-                <option value="台北市">台北市</option>
-                <option value="新北市">新北市</option>
-                <option value="宜蘭縣">宜蘭縣</option>
-                <option value="新竹市">新竹市</option>
-                <option value="新竹縣">新竹縣</option>
-                <option value="桃園縣">桃園縣</option>
-                <option value="苗栗縣">苗栗縣</option>
-                <option value="台中市">台中市</option>
-                <option value="彰化縣">彰化縣</option>
-                <option value="南投縣">南投縣</option>
-                <option value="嘉義市">嘉義市</option>
-                <option value="嘉義縣">嘉義縣</option>
-                <option value="雲林縣">雲林縣</option>
-                <option value="台南市">台南市</option>
-                <option value="高雄市">高雄市</option>
-                <option value="屏東縣">屏東縣</option>
-                <option value="台東縣">台東縣</option>
-                <option value="花蓮縣">花蓮縣</option>
-                <option value="金門縣">金門縣</option>
-                <option value="連江縣">連江縣</option>
-                <option value="澎湖縣">澎湖縣</option>
-              </select>
-            </span>
-          </div>
-          <div class="form-column">
-            <span data-role="district" data-style="text">
-              <select name="area" id="area" class="form-select field-custom">
-                <option value="">選擇居住地區</option>
-              </select>
-            </span>
-            <span data-role="zipcode" data-style="zipcode" style="display:none;">
-              <input type="text" name="zipcode" id="zipcode" class="zipcode">
-            </span>
-          </div>
-          <div class="form-column">
-            <input name="agree" id="agree" type="checkbox" class="form-check-input" checked="">
-            <label for="agree" class="form-check-label field-custom--small">我已詳閱並同意<a href="http://www.venussecret.com.tw/about/privacy.php" target="_blank">隱私權政策</a>，並願意收到維娜斯的最新活動與資訊</label>
           </div>
         </div>
-        <div class="form-btn">
-          <a id="submit_btn" class="btn__custom btn__custom--white" href="javascript:;" onclick="javascript:checkForm(); return false;" class="btn">
+        <div class="item-footer">
+          <a class="btn__custom btn__custom--white" href="#">
             預約解放
           </a>
         </div>
-      </form>
-
-
-
+      </div>
+      <!-- 第四卡 靜態 -->
+      <div class="carousel carousel__wrapper carousel__wrapper--gutter">
+        <div class="carousel">
+          <div>
+            <img src="https://fakeimg.pl/375x263/999999" style="width: 100%">
+          </div>
+          <div class="carousel__figcaption carousel__figcaption--paddingBottom">
+            <div>
+              <img src="https://fakeimg.pl/50x65/999999" style="width: 100%">
+            </div>
+            <div class="spec spec--padding">
+              <p class="subTitle">窈窕曲線 x 挺拔身型</p>
+              <p class="title title--marginBottom">MAN VENUS男款 x 2 + 女款塑身衣 x 2 (及膝款)</p>
+              <p class="discount">
+                現省＄39,000
+                <br>
+                加碼送衣：(市價 ＄18,000) Philia 塑身衣
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item-footer">
+          <a class="btn__custom btn__custom--white" href="#">
+            預約解放
+          </a>
+        </div>
+      </div>
     </div>
+    <div class="s5">
+      <div class="airfit__wrapper">
+        <div>
+          <img src="https://fakeimg.pl/375x375/DDDDDD" style="width: 100%">
+        </div>
+        <div class="airfit__info">
+          <img src="https://fakeimg.pl/165x50/DDDDDD">
+          <p class="title">全新系列．進化突破自信之作</p>
+          <p><img src="https://fakeimg.pl/65x20/DDDDDD">空氣推推指從衣料最基礎單位「紗線」著手，尋訪日本研發最新特級尼龍，透過嚴格的科學紡織工藝，打造出均勻緻密的纖維結構，在維持高抗拉強度同時，面料達到更薄、更輕的絲透境界。</p>
+        </div>
+        <div class="airfit__slogan">
+          <p class="title">fit into thin air</p>
+          <p>比美更美　比輕更輕</p>
+        </div>
+        <div class="item-footer">
+          <a href="#">
+            <img src="https://fakeimg.pl/45x45/DDDDDD">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="s6">
+      <div class="carousel carousel__wrapper carousel__wrapper--gutter">
+        <div class="item-header">
+          <span class="title">YOUR FIRST VENUS</span>
+          <span class="subText">穿上它 美在當下</span>
+        </div>
+        <!-- 輪播 -->
+        <div class="carousel carousel--leftBorder">
+          <div>
+            <img src="https://fakeimg.pl/375x305/999999" style="width: 100%">
+          </div>
+          <div class="carousel__figcaption carousel__figcaption--gray">
+            <div class="spec">
+              <p class="subTitle">收攏掰掰袖</p>
+              <p class="title">纖臂袖套</p>
+            </div>
+          </div>
+        </div>
+        <div class="item-footer">
+          <a class="btn__custom btn__custom--white" href="#">
+            單品試穿
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="s7">
+      <div class="service__wrapper">
+        <div class="item-header">
+          <span class="title">VENUS FOR YOU</span>
+          <span class="subText">你的曲線管家 | 尊寵服務 | 掌握每吋身型</span>
+        </div>
+        <div class="service__item">
+          <div class="service__info">
+            <img src="https://fakeimg.pl/100x100/999999">
+            <p>新衣保固 30 天</p>
+          </div>
+          <div class="service__info">
+            <img src="https://fakeimg.pl/100x100/999999">
+            <p>新衣修改 4 日速件</p>
+          </div>
+          <div class="service__info">
+            <img src="https://fakeimg.pl/100x100/999999">
+            <p>免費減吋改小</p>
+          </div>
+          <div class="service__info">
+            <img src="https://fakeimg.pl/100x100/999999">
+            <p>24hr 顧問專屬服務</p>
+          </div>
+        </div>
+        <div class="item-footer">
+          <a class="btn__custom btn__custom--white" href="#">
+            預約試穿
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="s8">
+      <div></div>
+    </div>
+    <div class="s9">
+      <div></div>
+    </div>
+
   </div>
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>     
   </body>
