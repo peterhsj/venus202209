@@ -74,11 +74,10 @@ font-family: system-ui,
 .social {
   &__wrapper {
     .order {
-      display: inline;
+      // display: inline;
       @include screen('desktop') {
-        display: none;
         position: absolute;
-        right: 12px;
+        right: 50px;
         top: 125px;
         .btn__custom--gray {
           padding: 8px 35px;

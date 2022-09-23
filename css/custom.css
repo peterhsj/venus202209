@@ -59,14 +59,10 @@
   }
 }
 
-.social__wrapper .order {
-  display: inline;
-}
 @media only screen and (min-width: 768px) {
   .social__wrapper .order {
-    display: none;
     position: absolute;
-    right: 12px;
+    right: 50px;
     top: 125px;
   }
   .social__wrapper .order .btn__custom--gray {
