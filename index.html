@@ -8,6 +8,10 @@
     <meta name="generator" content="Hugo 0.101.0">
     <title>VENUS</title>
 
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/light.css" rel="stylesheet">
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">    
     <!-- Custom styles for this template -->
     <link href="css/navbar-top-fixed.css" rel="stylesheet">
@@ -15,36 +19,51 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
-  <div class="wrapper">
-    <div class="kv__header">
-      <nav class="navbar navbar-expand-md fixed-top bg-light rounded">
-        <div class="container-fluid navbar__custom--height">
-          <!-- <a class="" href="#">Fixed navbar</a> -->
+  <div class="kv__wrapper">
+    <div class="kv__header fixed-top">
+      <!-- Logo desktop -->
+      <a class="navbar__customBrand" href="#"><img class="navbar__customBrand--logo" src="https://fakeimg.pl/300x55/#ddd"></a>
+      <nav class="navbar navbar-expand-md navbar__custom--height">
+        <div class="container-fluid px-0">
+          <!-- 漢堡選單 -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="https://fakeimg.pl/150x30/#ddd"></a>
-          <a class="btn__custom btn__custom--gray" href="#">預約解放</a>
+          <div class="social__wrapper">
+            <div class="order">
+              <a class="btn__custom btn__custom--gray" href="#">預約解放</a>
+            </div>
+            <div class="social__Icon">
+              <a href="https://www.facebook.com/VENUSSECRET/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/venussecret.f/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://page.line.me/raw7726j" target="_blank"><i class="fab fa-line"></i></a>
+              <a href="https://social.venussecret.com.tw/" target="_blank"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+          <!-- Main menu -->
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <ul class="navbar-nav custom__navBar me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">孕期預訂曲線回歸</a>
+                <a class="nav-link custom__navLink" href="#">孕期預訂曲線回歸</a>
+                <span>|</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">美型雕塑穿回S號</a>
+                <a class="nav-link custom__navLink" href="#">美型雕塑穿回S號</a>
+                <span>|</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">女神穿搭好評推薦</a>
+                <a class="nav-link custom__navLink" href="#">女神穿搭好評推薦</a>
+                <span>|</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">久坐大屁股OUT</a>
+                <a class="nav-link custom__navLink" href="#">久坐大屁股OUT</a>
+                <span>|</span>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">動靜都能塑</a>
+                <a class="nav-link custom__navLink" href="#">動靜都能塑</a>
               </li>
             </ul>      
           </div>
-          
         </div>
       </nav>
     </div>

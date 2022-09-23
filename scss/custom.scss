@@ -17,11 +17,126 @@ font-family: system-ui,
   "Segoe UI Symbol",
   "Noto Color Emoji"
 }
+.kv {
+  &__header {
+    height: 90px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    @include screen('desktop') {
+      height: 185px;
+      padding-top: 40px;  
+    }
+  }
+}
 .navbar {
   &__custom {
     &--height {
-        padding-top: 22px;
-        padding-bottom: 10px;
+      padding: 0 20px 0 20px;
+      background-color: #FFFFFF;
+      width: 100%;
+      @include screen('desktop') {
+        padding: 35px 40px 0 30px;
+      }
+    }
+  }
+  &__customBrand {
+    &--logo {
+      width: 150px;
+      height: 30px;
+      @include screen('desktop') {
+        width: 300px;
+        height: 55px;
+      }
+    }
+  }
+  &-collapse {
+    order: 3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include screen('desktop') {
+      order: 2;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .social {
+    &__wrapper {
+      order: 2;
+      @include screen('desktop') {
+        order: 3;
+      }
+    }
+  }
+}
+.social {
+  &__wrapper {
+    .order {
+      display: inline;
+      @include screen('desktop') {
+        display: none;
+        position: absolute;
+        right: 12px;
+        top: 125px;
+        .btn__custom--gray {
+          padding: 8px 35px;
+          font-size: 1.125rem;
+          font-weight: bolder;
+          line-height: 1;
+          border-radius: 8px;
+          background-color: #FFFFFF;
+          color: #000000;
+          &:hover {
+            background-color: #000000;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+  &__Icon {
+    display: none;
+    @include screen('desktop') {
+      display: inline-block;
+    }
+    a {
+      padding: 8px 10px;
+      font-size: 1.4rem;
+      color: #80858A;
+      :hover {
+        color: #333333;
+      }
+    }
+  }  
+}
+
+.custom {
+  &__navBar {
+    .nav-item {
+      display: flex;
+      align-items: center;
+      span {
+        display: none;
+        @include screen('desktop') {
+          display: inline;
+          padding-bottom: 2px;
+        }
+      }
+    }
+  }
+  &__navLink {
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    @include screen('desktop') {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      color: #80858A;
+      :hover {
+        color: #333333;
+      }
     }
   }
 }
@@ -295,6 +410,7 @@ $gutter-x:  4rem;
 }
 
 .kv {
+
   &__footer {
     background-color: #FFFFFF;
   }
