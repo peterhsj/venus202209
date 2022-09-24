@@ -18,6 +18,18 @@ font-family: system-ui,
   "Noto Color Emoji"
 }
 .kv {
+  &__pc {
+    display: none;
+    @include screen ('desktop') {
+      display: block;
+    }
+  }
+  &__mobile {
+    display: block;
+    @include screen ('desktop') {
+      display: none;
+    }
+  }
   &__header {
     height: 90px;
     padding-top: 15px;
@@ -114,7 +126,7 @@ font-family: system-ui,
           order: 2;
           width: 210px;
           display: flex;
-          justify-content: end;
+          justify-content: flex-end;
         }
       }
     }
@@ -646,19 +658,38 @@ $gutter-x:  4rem;
   }
 }
 .s2 {
-  padding: 40px 0 30px;
   background-color: #EEEEEE;
   .promote {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0 30px;
+    max-width: 85%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @include screen ('desktop') {
+      padding: 50px 0 40px;
+      max-width: 1100px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @include screen ('desktop') {
+        width: 60%;
+      }
+    }
     &__item {
       flex-grow: 1;
       &--left {
         padding-left: 1.5rem;
       }
-      &--right {
-        padding-right: 1.5rem;
-      }
+      // &--right {
+      //   padding-right: 1.5rem;
+      // }
       p {
         margin-bottom: 1rem;
         font-size: 0.9rem;
@@ -666,11 +697,16 @@ $gutter-x:  4rem;
         letter-spacing: 0.05em;
         font-weight: 700;
         padding-left: 1rem;
+        @include screen ('desktop') {
+          font-size: 1rem;
+          line-height: 1.85;
+        }
         &.title {
           font-size: 1.1rem;
           line-height: 1;
           border-left: 4px solid #000000;
-          padding-left: calc(1rem - 4px);
+          padding-left: calc(1rem - 4px);  
+          font-weight: 900;
         }
       }
     }
@@ -683,6 +719,9 @@ $gutter-x:  4rem;
       line-height: 1.5;
       font-weight: 700;
       color: #999999;
+      @include screen ('desktop') {
+        font-size: 0.9rem;
+      }
       ol {
         margin-bottom: 0;
       }
