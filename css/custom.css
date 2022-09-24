@@ -728,6 +728,7 @@
 .s2 .promote__wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 @media only screen and (min-width: 768px) {
