@@ -30,6 +30,9 @@ font-family: system-ui,
       padding-top: 40px;  
     }
   }
+  &__footer {
+    background-color: #FFFFFF;
+  }
 }
 .navbar {
   &__custom {
@@ -73,8 +76,8 @@ font-family: system-ui,
 }
 .social {
   &__wrapper {
+    // Header的預約解放按鈕
     .order {
-      // display: inline;
       @include screen('desktop') {
         position: absolute;
         right: 50px;
@@ -82,7 +85,7 @@ font-family: system-ui,
         .btn__custom--gray {
           padding: 8px 35px;
           font-size: 1.125rem;
-          font-weight: bolder;
+          font-weight: 900;
           line-height: 1;
           border-radius: 8px;
           background-color: #FFFFFF;
@@ -94,6 +97,84 @@ font-family: system-ui,
         }
       }
     }
+    &--footer {
+      padding: 3rem 3rem 1rem;
+      display: flex;
+      flex-direction: column;
+      @include screen ('desktop') {
+        padding: 40px 40px 24px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .social__Icon {
+        padding-bottom: 20px;
+        display: block;
+        text-align: center;
+        @include screen ('desktop') {
+          order: 2;
+          width: 210px;
+          display: flex;
+          justify-content: end;
+        }
+      }
+    }
+  }
+  &__tel {
+    order: 2;
+    flex-grow: 1;
+    &--free {
+      padding: 8px 0 40px;
+      display: block;
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 900;
+      @include screen ('desktop') {
+        order: 1;
+        padding: 8px 0 10px;
+        text-align: left;
+        letter-spacing: 0.125rem;
+        border-bottom: 2px solid #F2F2F2;
+      }
+    }
+  }
+
+  &__shop {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.125rem;
+    @include screen ('desktop') {
+      padding: 30px 0 0;
+      flex-direction: row;
+    }
+    &--premium {
+      flex-grow: 1;
+      padding-right: 30px;
+    }
+    &--branch {
+      flex-grow: 3;
+      padding-right: 15px;
+      &--group {
+        display: flex;
+        flex-direction: column;      
+        @include screen ('desktop') {
+          padding: 0;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        p {
+          padding-right: 25px;
+        }
+      }
+    }
+    &--title {
+      font-weight: 900;
+    }
+    p {
+      line-height: 2;
+      &.social__shop--title {
+        line-height: 1;
+      }
+    }
   }
   &__Icon {
     display: none;
@@ -103,9 +184,13 @@ font-family: system-ui,
     a {
       padding: 8px 10px;
       font-size: 1.4rem;
+      line-height: 1;
       color: #80858A;
       :hover {
         color: #333333;
+      }
+      @include screen('desktop') {
+        height: 40px;
       }
     }
   }  
@@ -128,7 +213,7 @@ font-family: system-ui,
   &__navLink {
     width: 100%;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 900;
     @include screen('desktop') {
       padding-left: 10px !important;
       padding-right: 10px !important;
@@ -162,10 +247,32 @@ font-family: system-ui,
     // 灰底黑字
     &--gray {
       background-color: #E6E6E6;
-      color: #333333;
+      color: #000000;
       &:hover {
-        background-color: #333333;
+        background-color: #000000;
         color: #ffffff;
+      }
+    }
+    // 灰底黑框
+    &--grayBorder {
+      padding: 0.5rem 3.2rem;
+      font-family: 微軟正黑體;
+      font-size: 1.3125rem;
+      font-weight: 900;
+      letter-spacing: 0.25rem;
+      border-radius: 0.475rem;
+      background-color: #ffffff;
+      color: #000000;      
+      &:hover {
+        background-color: #000000;
+        color: #ffffff;
+      }      
+      @include screen ('desktop') {
+        padding: 0.8rem 2.5rem;
+        font-size: 1.1125rem;
+        background-color: #DBDBDB;
+        border: 1px solid #FFFFFF;
+        border-radius: 1rem;
       }
     }
     // 白底黑字，按鈕加大
@@ -173,13 +280,19 @@ font-family: system-ui,
       padding: 0.5rem 3.2rem;
       font-family: 微軟正黑體;
       font-size: 1.3125rem;
-      font-weight: bolder;
+      font-weight: 900;
+      letter-spacing: 0.25rem;
       border-radius: 0.475rem;
       background-color: #ffffff;
       color: #333333;
       &:hover {
         background-color: #333333;
         color: #ffffff;
+      }
+      @include screen ('desktop') {
+        padding: 1rem 3.2rem;
+        border: 1px solid #000000;
+        border-radius: 1rem;
       }
     }
   }
@@ -194,37 +307,57 @@ font-family: system-ui,
   flex-direction: column;
   align-items: center;
   @include screen('desktop') {
-    margin-left: 60px;
-    padding: 4rem 0;
+    margin-left: 120px;
+    padding: 6rem 0 4rem;
     align-items: flex-start;
   }
   &--form {
-    padding: 2.5rem 0 0.3125px;
+    margin-left: 30px;
+    padding: 2rem 0 0.3125rem;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
     border-bottom: 1px solid #FFFFFF;
   }
   .title {
-    font-size: 1.437rem;
-    font-weight: bolder;
+    font-size: 1.625rem;
+    font-weight: 900;
     font-family: Arial;
     letter-spacing: 0.025em;
     @include screen('desktop') {
       font-size: 4rem;
-    letter-spacing: 0em;
+      letter-spacing: 0;
     }
   }
-
   .subText {
     font-size: 0.9rem;
-    font-weight: bolder;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    @include screen('desktop') {
+      font-size: 1rem;
+    }
+  }
+  .formTitle {
+    font-size: 1.625rem;
+    font-weight: 900;
+    font-family: Arial;
+    letter-spacing: 0.025em;
+  }
+
+  .formSubText {
+    font-size: 0.9rem;
+    font-weight: 900;
+    letter-spacing: 0.075em;
   }
 }
 
 .item-footer {
   padding: 2.5rem 0 2.5rem;
   text-align: center;
+  @include screen('desktop') {
+    padding: 3rem 0;
+  }
 }
 
 // 輪播
@@ -269,7 +402,7 @@ $gutter-x:  4rem;
     .subTitle {
       margin-bottom: 0;
       font-size: 0.875rem;
-      font-weight: bolder;
+      font-weight: 900;
       font-family: Arial;
       letter-spacing: 0.125em;
       &--spacing {
@@ -288,7 +421,7 @@ $gutter-x:  4rem;
     .title {
       margin-bottom: 0;
       font-size: 1.3125rem;
-      font-weight: bolder;
+      font-weight: 900;
       font-family: Arial;
       letter-spacing: 0.025em;
       &--marginBottom {
@@ -298,49 +431,131 @@ $gutter-x:  4rem;
     .discount {
       margin-bottom: 0;
       font-size: 1.0625rem;
-      font-weight: bolder;
+      font-weight: 900;
       font-family: Arial;
       letter-spacing: 0.025em;
     }
   }
 }
+.appoint,
 .airfit {
   &__wrapper {
     display: flex;
     flex-direction: column;
-    background-color: #000000;
+    @include screen ('desktop') {
+      flex-direction: row;
+    }
+  }
+  &__picture {
+    img {
+      display: block;
+    }
+    @include screen ('desktop') {
+      width: 50%;
+      background-image: url("https://picsum.photos/500/400?random=1");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      img {
+        display: none;
+      }
+    }
+  }
+  &__infoGroup {
+    @include screen ('desktop') {
+      width: 50%;
+    }
+    .item-footer {
+      @include screen ('desktop') {
+        text-align: right;
+        &__form {
+          text-align: left;
+        }
+        image {
+          width:60px;
+        }
+      }
+    }
+  }
+  &__logo {
+    width: 165px;
+    @include screen ('desktop') {
+      width: 320px;
+    }
+  }
+  &__form {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    width: 90%;
+    @include screen ('desktop') {
+      padding-top: 140px;
+      max-width: 665px;
+    }
   }
   &__info {
-    padding: 2rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    width: 70%;
     color: #FFFFFF;
+    @include screen ('desktop') {
+      padding-top: 140px;
+      max-width: 622px;
+    }
     p {
       font-size: 0.875rem;
       letter-spacing: 0.075em;
       text-align: justify;
+      @include screen ('desktop') {
+        font-size: 1rem;
+        line-height: 2rem;
+        letter-spacing: 0.15rem;
+        ;
+      }
       &.title {
         padding-top: 2.5rem;
         padding-bottom: 0rem; 
         font-size: 1.0625rem;
+        @include screen ('desktop') {
+          padding-top: 4rem;
+          font-size: 1.125rem;
+          font-weight: 900;
+          letter-spacing: 0.15rem;
+        }
       }
     }
   }
   &__slogan {
-    margin: 0 2rem;
+    margin: 3rem 0 0;
     padding: 2rem 0;
-    width: calc(100% - 4rem);
+    width: 100%;
     text-align: center;
     color: #FFFFFF;
     border-width: 1px 0;
     border-color: #999999;
     border-style: solid;
+    @include screen ('desktop') {
+      margin: 5rem 0 0;
+      width: 100%;
+    }
     p {
       margin-bottom: 0rem;
       font-size: 0.875rem;
       font-weight: 300;
       letter-spacing: 0.05em;
+      text-align: center;
       &.title {
         margin-bottom: 0.5rem;
-        font-size: 1.5rem;
+        padding-top: 0;
+        font-size: 1.625rem;
+        @include screen ('desktop') {
+          font-weight: 300;
+        }
+      }
+      &.subTitle {
+        font-size: 1rem;
+        letter-spacing: 0.25rem;
       }
     }
   }
@@ -359,9 +574,11 @@ $gutter-x:  4rem;
     align-items: center;
     justify-content: space-around;
     @include screen('desktop') {
-      width: 70%;
+      width: 100%;
+      max-width: 1365px;
       margin-left: auto;
       margin-right: auto;
+      padding-bottom: 6rem;
     }
   }
   &__info {
@@ -375,43 +592,18 @@ $gutter-x:  4rem;
       width: 100px;
       height: 100%;
       @include screen('desktop') {
-        width: 150px;
+        width: 215px;
+        height: 195px;
       }
     }
     p {
       margin-bottom: 0.3rem;
-      margin-top: 1.3rem;
+      margin-top: 2.2rem;
       font-size: 0.875rem;
       line-height: 1.5;
-      letter-spacing: 0.05em;
-      font-weight: bolder;
+      letter-spacing: 0.075em;
+      font-weight: 900;
     }
-  }
-}
-.social {
-  padding: 3rem 3rem 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.tel {
-  padding: 1rem 0 1rem;
-  display: block;
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: bolder;
-}
-.shop {
-  padding: 0 2.5rem;
-  .title {
-    font-weight: bolder;
-  }
-}
-
-.kv {
-
-  &__footer {
-    background-color: #FFFFFF;
   }
 }
 
@@ -434,7 +626,7 @@ $gutter-x:  4rem;
       font-size: 1.5rem;
       line-height: 1.5;
       letter-spacing: 0.4em;
-      font-weight: bolder;
+      font-weight: 900;
     }
     &.subTitle {
       margin-bottom: 1.875rem;
@@ -505,7 +697,7 @@ $gutter-x:  4rem;
     margin-bottom: 1rem;
     .label-custom {
       font-size: 0.925rem;
-      font-weight: bolder;
+      font-weight: 900;
     }
   }
   .kv-formbox {
@@ -532,7 +724,7 @@ $gutter-x:  4rem;
         padding-left: 0.2rem;
         padding-top: 0.2rem;
         font-size: 0.75rem;
-        font-weight: bolder;
+        font-weight: 900;
         letter-spacing: 0.025em;
         a {
           text-decoration: none;
@@ -555,6 +747,7 @@ $gutter-x:  4rem;
 
 .s5 {  
   width: 100%;
+  background-color: #000000;
 }
 
 .s6 {
