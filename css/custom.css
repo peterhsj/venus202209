@@ -363,10 +363,20 @@
   font-family: Arial;
   letter-spacing: 0.025em;
 }
+@media only screen and (min-width: 768px) {
+  .item-header .formTitle {
+    font-size: 2rem;
+  }
+}
 .item-header .formSubText {
   font-size: 0.9rem;
   font-weight: 900;
   letter-spacing: 0.075em;
+}
+@media only screen and (min-width: 768px) {
+  .item-header .formSubText {
+    font-size: 1rem;
+  }
 }
 
 .item-footer {
@@ -414,6 +424,10 @@
     flex-direction: row;
   }
 }
+.exclusive__group--noPadding {
+  max-width: 100%;
+  width: 100%;
+}
 @media only screen and (min-width: 768px) {
   .exclusive__group--noPadding .exclusive__picture {
     width: 60%;
@@ -447,8 +461,12 @@
     margin-top: 35px;
     margin-bottom: 35px;
     display: flex;
-    max-width: 1460px;
+    max-width: 1595px;
     width: 95%;
+  }
+  .exclusive__group--pc.noPadding {
+    max-width: 100%;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -573,33 +591,39 @@
     flex-direction: row;
   }
 }
-.appoint__picture img,
-.airfit__picture img {
-  display: block;
+.appoint__picture .appointImg,
+.airfit__picture .appointImg {
   width: 100%;
-  height: 560px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center top;
-     object-position: center top;
+  -o-object-position: top center;
+     object-position: top center;
 }
-.appoint__picture img.img--pc,
-.airfit__picture img.img--pc {
+.appoint__picture .appointImg--pc,
+.airfit__picture .appointImg--pc {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  .appoint__picture img.img--pc,
-.airfit__picture img.img--pc {
+  .appoint__picture .appointImg--pc,
+.airfit__picture .appointImg--pc {
     display: block;
+    background-image: url("../images/appoint.jpg");
+    background-position: top center;
+    background-size: cover;
+  }
+  .appoint__picture .appointImg--pc img,
+.airfit__picture .appointImg--pc img {
+    display: none;
   }
 }
-.appoint__picture img.img--mobile,
-.airfit__picture img.img--mobile {
+.appoint__picture .appointImg--mobile,
+.airfit__picture .appointImg--mobile {
   display: block;
 }
 @media only screen and (min-width: 768px) {
-  .appoint__picture img.img--mobile,
-.airfit__picture img.img--mobile {
+  .appoint__picture .appointImg--mobile,
+.airfit__picture .appointImg--mobile {
     display: none;
   }
 }
@@ -610,6 +634,7 @@
   }
   .appoint__picture img,
 .airfit__picture img {
+    width: 100%;
     height: 100%;
   }
 }
@@ -934,15 +959,35 @@
   font-size: 0.925rem;
   font-weight: 900;
 }
+@media only screen and (min-width: 768px) {
+  .s3 .needsWrap .label-custom {
+    font-size: 1.125rem;
+  }
+}
 .s3 .kv-formbox {
   padding: 40px 30px 5px;
+}
+@media only screen and (min-width: 768px) {
+  .s3 .kv-formbox {
+    padding: 100px 30px 100px;
+  }
 }
 .s3 .form-column {
   padding-bottom: 0.6rem;
 }
+@media only screen and (min-width: 768px) {
+  .s3 .form-column {
+    padding-bottom: 1rem;
+  }
+}
 .s3 .form-column .form-select {
   color: #666666;
   font-size: 0.925rem;
+}
+@media only screen and (min-width: 768px) {
+  .s3 .form-column .form-select {
+    font-size: 1.125rem;
+  }
 }
 .s3 .form-column .field-custom {
   margin-bottom: 0.1rem;
@@ -963,6 +1008,17 @@
   color: #666666;
   font-size: 0.925rem;
 }
+@media only screen and (min-width: 768px) {
+  .s3 .form-column .field-custom::-moz-placeholder {
+    font-size: 1.125rem;
+  }
+  .s3 .form-column .field-custom:-ms-input-placeholder {
+    font-size: 1.125rem;
+  }
+  .s3 .form-column .field-custom::placeholder {
+    font-size: 1.125rem;
+  }
+}
 .s3 .form-column .field-custom--small {
   width: calc(100% - 2.4rem);
   padding-left: 0.2rem;
@@ -970,6 +1026,11 @@
   font-size: 0.75rem;
   font-weight: 900;
   letter-spacing: 0.025em;
+}
+@media only screen and (min-width: 768px) {
+  .s3 .form-column .field-custom--small {
+    font-size: 1rem;
+  }
 }
 .s3 .form-column .field-custom--small a {
   text-decoration: none;

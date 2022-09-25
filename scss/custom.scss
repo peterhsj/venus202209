@@ -355,12 +355,18 @@ font-family: system-ui,
     font-weight: 900;
     font-family: Arial;
     letter-spacing: 0.025em;
+    @include screen('desktop') {
+      font-size: 2rem;
+    }
   }
 
   .formSubText {
     font-size: 0.9rem;
     font-weight: 900;
     letter-spacing: 0.075em;
+    @include screen('desktop') {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -406,6 +412,8 @@ $gutter-x:  4rem;
       flex-direction: row;
     }
     &--noPadding {
+      max-width: 100%;
+      width: 100%;
       .exclusive__picture {
         @include screen ('desktop') {
           width: 60%;
@@ -436,8 +444,12 @@ $gutter-x:  4rem;
         margin-top: 35px;
         margin-bottom: 35px;
         display: flex;
-        max-width: 1460px;
+        max-width: 1595px;
         width: 95%;
+        &.noPadding {
+          max-width: 100%;
+          width: 100%;
+        }
       }
     }
   }
@@ -559,33 +571,38 @@ $gutter-x:  4rem;
     }
   }
   &__picture {
-    img {
-      display: block;
+    .appointImg {
       width: 100%;
-      height: 560px;
+      height: 100%;
       object-fit: cover;
-      object-position: center top;
-      &.img {
-        &--pc {
-          display: none;
-      
-          @include screen ('desktop') {
-            display: block;
-          }
-        }
-        &--mobile {
+      object-position: top center;
+      &--pc {
+        display: none;      
+        @include screen ('desktop') {
           display: block;
-
-          @include screen ('desktop') {
+          background-image: url("../images/appoint.jpg");
+          background-position: top center;
+          background-size: cover;
+          img {
             display: none;
           }
         }
       }
-      
+      &--mobile {
+        display: block;
+        @include screen ('desktop') {
+          display: none;
+        }
+        // img {
+        //   width: 100%;
+        //   height: 100%;
+        // }
+      }
     }
     @include screen ('desktop') {
       width: 50%;
       img {
+        width: 100%;
         height: 100%;
       }
     }
@@ -866,16 +883,28 @@ $gutter-x:  4rem;
     .label-custom {
       font-size: 0.925rem;
       font-weight: 900;
+      @include screen ('desktop') {
+        font-size: 1.125rem;
+      }
     }
   }
   .kv-formbox {
     padding: 40px 30px 5px;
+    @include screen ('desktop') {
+      padding: 100px 30px 100px;
+    }
   }
   .form-column {
     padding-bottom: 0.6rem;
+    @include screen ('desktop') {
+      padding-bottom: 1rem;
+    }
     .form-select {
       color: #666666;
       font-size: 0.925rem;
+      @include screen ('desktop') {
+        font-size: 1.125rem;
+      }
     }
     .field-custom {
       margin-bottom: 0.1rem;
@@ -886,6 +915,9 @@ $gutter-x:  4rem;
       &::placeholder {
         color: #666666;
         font-size: 0.925rem;
+        @include screen ('desktop') {
+          font-size: 1.125rem;
+        }
       }
       &--small {
         width: calc(100% - 2.4rem);
@@ -894,6 +926,9 @@ $gutter-x:  4rem;
         font-size: 0.75rem;
         font-weight: 900;
         letter-spacing: 0.025em;
+        @include screen ('desktop') {
+          font-size: 1rem;
+        }
         a {
           text-decoration: none;
           border-bottom: 1px solid;
