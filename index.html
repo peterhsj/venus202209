@@ -72,8 +72,7 @@
     </div>
     <!-- BE SUPPORTED BE FREE -->
     <div class="s1">
-      <!-- PC 輪播 -->
-      <!-- Swiper -->
+      <!-- Swiper KV-PC -->
       <div id="swiper_kv_pc" class="swiper kv__pc">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -84,10 +83,20 @@
           </div>
         </div>
       </div>
-      <!-- Mobile 輪播 -->
+      <!-- Swiper KV-Mobile -->
       <div class="kv__mobile">
-        <div class="carousel">
+        <!-- <div class="carousel">
           <img src="https://fakeimg.pl/375x263/DDD" class="img-fluid"  style="width: 100%">
+        </div> -->
+        <div id="swiper_kv_mobile" class="swiper kv__mobile">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/KV1-mobile.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/KV2-mobile.jpg">
+            </div>
+          </div>
         </div>
         <div class="content">
           <p class="title">穿上解放</p>
@@ -128,9 +137,7 @@
       <div class="appoint__wrapper">
         <div class="appoint__picture">
           <div class="appointImg appointImg--pc"></div>
-          <div class="appointImg appointImg--mobile">
-            <!-- <img src="images/appoint-mobile.jpg"> -->
-          </div>
+          <div class="appointImg appointImg--mobile"></div>
         </div>      
         <div class="appoint__infoGroup">
           <div class="appoint__form">
@@ -535,6 +542,25 @@
       //   prevEl: ".swiper-button-prev",
       // },
     });
+
+    var swiper = new Swiper("#swiper_kv_mobile", {
+        // spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        speed: 1500,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+      });
   </script>
   </body>
 </html>
