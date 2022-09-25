@@ -370,31 +370,116 @@ font-family: system-ui,
   @include screen('desktop') {
     padding: 3rem 0;
   }
+  &__exclusive {
+    @include screen('desktop') {
+      padding: 3rem 0 5rem;
+    }
+  }
+  &--pc {
+    display: none;    
+    @include screen ('desktop') {
+      display: block;
+    }
+  }
 }
 
 // 輪播
 $gutter-x:  4rem;
-.carousel {
+.exclusive {
   width: 100%;
   &--leftBorder {
     border-left: 2px solid #000000;
   }
   &__wrapper {
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
     &--gutter {
       padding-right: calc($gutter-x * .5);
       padding-left: calc($gutter-x * .5);
     }
   }
+  &__group {
+    @include screen ('desktop') {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: row;
+    }
+    &--noPadding {
+      .exclusive__picture {
+        @include screen ('desktop') {
+          width: 60%;
+        }
+      }
+      .exclusive__figcaption {
+        @include screen ('desktop') {
+          width: 44%;
+          &--group {        
+            @include screen ('desktop') {
+              max-width: 600px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    &--mobile {
+      display: flex;
+      flex-direction: column;
+      @include screen ('desktop') {
+        display: none;
+      }
+    }
+    &--pc {
+      display: none;
+      @include screen ('desktop') {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        display: flex;
+        max-width: 1460px;
+        width: 95%;
+      }
+    }
+  }
+  &__picture {
+    @include screen ('desktop') {
+      width: 65%;
+    }
+  }
   &__figcaption {
     display: flex;
     flex-direction: row;
-    padding: 2.5rem 2rem 0;
+    justify-content: flex-start;
+    padding: 2.5rem 2rem 2rem;
     background-color: #FFFFFF;
-    &--paddingBottom {
-      padding-bottom: 2rem;
+    @include screen ('desktop') {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2.5rem 2rem 3rem;
+      width: 35%;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
     }
+    &--group {
+      margin-left: 40px;
+      margin-right: 40px;
+      @include screen ('desktop') {
+        max-width: 400px;
+        width: 100%;
+      }
+    }
+    &--number {
+      width: 50px;
+      height: 79px;
+      @include screen ('desktop') {
+        width: 60px;
+        height: 95px;
+      }
+    }
+    // &--paddingBottom {
+    //   padding-bottom: 3rem;
+    // }
     &--gray {
       background-color: #EEEEEE;
     }
@@ -402,31 +487,15 @@ $gutter-x:  4rem;
       padding: 0.5rem;
     }
     div {
-      flex-grow: 1;
+      // flex-grow: 1;
+      // @include screen ('desktop') {
+      //   flex-grow: 0;
+      // }
       &.spec {
         display: flex;
         flex-direction: column;
         &--padding {
           padding-left: 1rem;
-        }
-      }
-    }
-    .subTitle {
-      margin-bottom: 0;
-      font-size: 0.875rem;
-      font-weight: 900;
-      font-family: Arial;
-      letter-spacing: 0.125em;
-      &--spacing {
-        letter-spacing: 0.5em;
-      }
-      a {
-        padding-left: 0.5rem;
-        text-decoration: none;
-        color: #333333;
-
-        &:hover {
-          color: #666666;
         }
       }
     }
@@ -436,8 +505,33 @@ $gutter-x:  4rem;
       font-weight: 900;
       font-family: Arial;
       letter-spacing: 0.025em;
+      @include screen ('desktop') {
+        font-size: 1.7rem;
+      }
       &--marginBottom {
         margin-bottom: 2rem;
+      }
+    }
+    .subTitle {
+      margin-bottom: 0;
+      font-size: 0.875rem;
+      font-weight: 900;
+      font-family: Arial;
+      letter-spacing: 0.125em;
+      @include screen ('desktop') {
+        padding-top: 30px;
+        font-size: 1.3125rem;
+      }
+      &--spacing {
+        letter-spacing: 0.5em;
+      }
+      a {
+        padding-left: 0.5rem;
+        text-decoration: none;
+        color: #333333;
+        &:hover {
+          color: #666666;
+        }
       }
     }
     .discount {
@@ -446,6 +540,12 @@ $gutter-x:  4rem;
       font-weight: 900;
       font-family: Arial;
       letter-spacing: 0.025em;
+      @include screen ('desktop') {
+        font-size: 1.4rem;
+      }
+      &--gray {
+        color: #b9b8b6;
+      }
     }
   }
 }
