@@ -571,6 +571,16 @@ $gutter-x:  4rem;
     }
   }
   &__picture {
+    width: 100%;
+    height: 295px;
+    @include screen ('desktop') {
+      width: 50%;
+      height: auto; 
+      // img {
+      //   width: 100%;
+      //   height: 100%;
+      // }
+    }
     .appointImg {
       width: 100%;
       height: 100%;
@@ -594,23 +604,16 @@ $gutter-x:  4rem;
         background-position: top center;
         background-size: cover;
         width: 100%;
-        height: 295px;
+        // height: 295px;
         @include screen ('desktop') {
           display: none;
         }
-        img {
-          width: 100%;
-          height: 100%;
-        }
+        // img {
+        //   width: 100%;
+        //   height: 100%;
+        // }
       }
-    }
-    @include screen ('desktop') {
-      width: 50%;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
+    }    
   }
   &__infoGroup {
     @include screen ('desktop') {
