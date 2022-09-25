@@ -972,4 +972,17 @@
   padding-bottom: 2.5rem;
   background-color: #EEEEEE;
   border-top: 1px solid #000000;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=custom.css.map */

@@ -12,7 +12,9 @@
     <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
     <link href="assets/fontawesome/css/light.css" rel="stylesheet">
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- Custom styles for this template -->
     <link href="css/navbar-top-fixed.css" rel="stylesheet">
     <link href="css/media-query.css" rel="stylesheet">
@@ -71,8 +73,16 @@
     <!-- BE SUPPORTED BE FREE -->
     <div class="s1">
       <!-- PC 輪播 -->
-      <div class="kv__pc">
-        <img src="https://picsum.photos/1920/965?random=1" style="width: 100%">
+      <!-- Swiper -->
+      <div id="swiper_kv_pc" class="swiper kv__pc">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/KV1-pc.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/KV2-pc.jpg">
+          </div>
+        </div>
       </div>
       <!-- Mobile 輪播 -->
       <div class="kv__mobile">
@@ -496,6 +506,30 @@
       </div>
     </div>
   </div>
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>     
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper("#swiper_kv_pc", {
+      // spaceBetween: 0,
+      centeredSlides: true,
+      loop: true,
+      speed: 1500,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
+    });
+  </script>
   </body>
 </html>
