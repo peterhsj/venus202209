@@ -574,8 +574,8 @@ $gutter-x:  4rem;
     .appointImg {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: top center;
+      // object-fit: cover;
+      // object-position: top center;
       &--pc {
         display: none;      
         @include screen ('desktop') {
@@ -583,13 +583,18 @@ $gutter-x:  4rem;
           background-image: url("../images/appoint.jpg");
           background-position: top center;
           background-size: cover;
-          img {
-            display: none;
-          }
+          // img {
+          //   display: none;
+          // }
         }
       }
       &--mobile {
         display: block;
+        background-image: url("../images/appoint-mobile.jpg");
+        background-position: top center;
+        background-size: cover;
+        width: 100%;
+        height: 295px;
         @include screen ('desktop') {
           display: none;
         }
