@@ -576,19 +576,41 @@
 .appoint__picture img,
 .airfit__picture img {
   display: block;
+  width: 100%;
+  height: 560px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+}
+.appoint__picture img.img--pc,
+.airfit__picture img.img--pc {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .appoint__picture img.img--pc,
+.airfit__picture img.img--pc {
+    display: block;
+  }
+}
+.appoint__picture img.img--mobile,
+.airfit__picture img.img--mobile {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .appoint__picture img.img--mobile,
+.airfit__picture img.img--mobile {
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) {
   .appoint__picture,
 .airfit__picture {
     width: 50%;
-    background-image: url("https://picsum.photos/500/400?random=1");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
   .appoint__picture img,
 .airfit__picture img {
-    display: none;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -810,6 +832,10 @@
   justify-content: flex-end;
   height: 80px;
   background-color: #000000;
+}
+.s1 .airfit .img--airfit {
+  width: 160px;
+  height: auto;
 }
 
 .s2 {
