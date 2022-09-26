@@ -39,7 +39,7 @@ var swiper = new Swiper("#swiper_star", {
 
 /** 周年慶特惠組 */
 var swiper = new Swiper("#swiper_exclusive_mobile", {
-  spaceBetween: 0,
+  spaceBetween: 20,
   centeredSlides: true,
   loop: true,
   speed: 1500,
