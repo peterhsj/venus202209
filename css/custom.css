@@ -473,6 +473,14 @@
   .exclusive__picture {
     width: 65%;
   }
+  .exclusive__picture img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+    width: 100%;
+    height: 100%;
+  }
 }
 .exclusive__figcaption {
   display: flex;
@@ -603,35 +611,32 @@
     height: auto;
   }
 }
-.appoint__picture .appointImg,
-.airfit__picture .appointImg {
+.appoint__picture img,
+.airfit__picture img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
 }
-.appoint__picture .appointImg--pc,
-.airfit__picture .appointImg--pc {
+.appoint__picture--pc,
+.airfit__picture--pc {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  .appoint__picture .appointImg--pc,
-.airfit__picture .appointImg--pc {
+  .appoint__picture--pc,
+.airfit__picture--pc {
     display: block;
-    background-image: url("../images/appoint.jpg");
-    background-position: top center;
-    background-size: cover;
   }
 }
-.appoint__picture .appointImg--mobile,
-.airfit__picture .appointImg--mobile {
+.appoint__picture--mobile,
+.airfit__picture--mobile {
   display: block;
-  background-image: url("../images/appoint-mobile.jpg");
-  background-position: top center;
-  background-size: cover;
-  width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  .appoint__picture .appointImg--mobile,
-.airfit__picture .appointImg--mobile {
+  .appoint__picture--mobile,
+.airfit__picture--mobile {
     display: none;
   }
 }
