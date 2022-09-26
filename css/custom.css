@@ -682,21 +682,25 @@
 .appoint__logo,
 .airfit__logo {
   width: 230px;
+  height: auto;
 }
 @media only screen and (min-width: 768px) {
   .appoint__logo,
 .airfit__logo {
     width: 320px;
+    height: auto;
   }
 }
 .appoint__logo--word,
 .airfit__logo--word {
   width: 65px;
+  height: auto;
 }
 @media only screen and (min-width: 768px) {
   .appoint__logo--word,
 .airfit__logo--word {
     width: 65px;
+    height: auto;
   }
 }
 .appoint__form,

@@ -639,13 +639,17 @@ $gutter-x:  4rem;
   }
   &__logo {
     width: 230px;
+    height: auto;
     @include screen ('desktop') {
       width: 320px;
+      height: auto;
     }
     &--word {
-      width: 65px;      
+      width: 65px;
+      height: auto;
       @include screen ('desktop') {
         width: 65px;
+        height: auto;
       }
     }
   }
