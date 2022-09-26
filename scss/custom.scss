@@ -428,9 +428,7 @@ font-family: system-ui,
 $gutter-x:  4rem;
 .exclusive {
   width: 100%;
-  // &--leftBorder {
-  //   border-left: 2px solid #000000;
-  // }
+  // position: relative;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -450,6 +448,7 @@ $gutter-x:  4rem;
       max-width: 100%;
       width: 100%;
       .exclusive__picture {
+        position: relative;
         @include screen ('desktop') {
           width: 60%;
         }
@@ -487,8 +486,52 @@ $gutter-x:  4rem;
         }
       }
     }
+    img {
+      &.mobile {
+        &__word-4 {
+          position: absolute;
+          top: 40%;
+          right: 25px;
+          width: 100px;
+          height: auto;
+        }        
+      }
+      &.pc {
+        &__word-1 {
+          position: absolute;
+          top: 30%;
+          left: 20%;
+          width: 180px;
+          height: auto;
+        }
+      
+        &__word-2 {
+          position: absolute;
+          top: 35%;
+          left: 20%;
+          width: 160px;
+          height: auto;
+        }
+      
+        &__word-3 {
+          position: absolute;
+          top: 30%;
+          left: 20%;
+          width: 180px;
+          height: auto;
+        }
+        &__word-4 {
+          position: absolute;
+          top: 38%;
+          right: 12%;
+          width: 180px;
+          height: auto;
+        }
+      }
+    }
   }
   &__picture {
+    position: relative;
     @include screen ('desktop') {
       width: 65%;
       img {
@@ -1110,6 +1153,30 @@ $gutter-x:  4rem;
     &.exclusive__number {
       width: 75px;
       height: 100px;
+    }
+
+    &.mobile {
+      &__word-1 {
+        position: absolute;
+        top: 20%;
+        left: 55px;
+        width: 150px;
+        height: auto;
+      }
+      &__word-2 {
+        position: absolute;
+        top: 30%;
+        right: 45px;
+        width: 150px;
+        height: auto;
+      }
+      &__word-3 {
+        position: absolute;
+        top: 20%;
+        left: 55px;
+        width: 150px;
+        height: auto;
+      }      
     }
   }
 }

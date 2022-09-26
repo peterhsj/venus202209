@@ -43,10 +43,10 @@ var swiper = new Swiper("#swiper_exclusive_mobile", {
   centeredSlides: true,
   loop: true,
   speed: 1500,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
