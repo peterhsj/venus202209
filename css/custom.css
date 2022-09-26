@@ -406,6 +406,14 @@
     display: block;
   }
 }
+.item-footer .circleArrow {
+  width: 60px;
+}
+@media only screen and (min-width: 768px) {
+  .item-footer .circleArrow {
+    width: 45px;
+  }
+}
 
 .exclusive {
   width: 100%;
@@ -745,16 +753,6 @@
     font-size: 1.125rem;
     font-weight: 900;
     letter-spacing: 0.15rem;
-  }
-}
-.appoint__info .circleArrow,
-.airfit__info .circleArrow {
-  width: 60px;
-}
-@media only screen and (min-width: 768px) {
-  .appoint__info .circleArrow,
-.airfit__info .circleArrow {
-    width: 45px;
   }
 }
 .appoint__slogan,

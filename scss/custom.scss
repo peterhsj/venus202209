@@ -392,6 +392,12 @@ font-family: system-ui,
       display: block;
     }
   }
+  .circleArrow {
+    width: 60px;
+    @include screen ('desktop') {
+      width: 45px;
+    }
+  }
 }
 
 // 輪播
@@ -683,12 +689,12 @@ $gutter-x:  4rem;
         }
       }
     }
-    .circleArrow {
-      width: 60px;
-      @include screen ('desktop') {
-        width: 45px;
-      }
-    }
+    // .circleArrow {
+    //   width: 60px;
+    //   @include screen ('desktop') {
+    //     width: 45px;
+    //   }
+    // }
   }
   &__slogan {
     margin: 3rem 0 0;
