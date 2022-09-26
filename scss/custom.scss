@@ -415,11 +415,20 @@ font-family: system-ui,
     }
   }
   .circleArrow {
+    display: inline-block;
     width: 60px;
-    height: auto;
+    height: 60px;
+    background-image: url("../images/circle-arrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:hover {
+      background-image: url("../images/circle-arrow-bg-white.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
     @include screen ('desktop') {
-      width: 45px;
-      height: auto;
+      width: 50px;
+      height: 50px;
     }
   }
 }
@@ -428,7 +437,6 @@ font-family: system-ui,
 $gutter-x:  4rem;
 .exclusive {
   width: 100%;
-  // position: relative;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -753,12 +761,6 @@ $gutter-x:  4rem;
         }
       }
     }
-    // .circleArrow {
-    //   width: 60px;
-    //   @include screen ('desktop') {
-    //     width: 45px;
-    //   }
-    // }
   }
   &__slogan {
     margin: 3rem 0 0;
