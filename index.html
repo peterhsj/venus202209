@@ -456,24 +456,74 @@
     </div>
     <!-- YOUR FIRST VENUS -->
     <div class="s6">
-      <div class="carousel carousel__wrapper carousel__wrapper--gutter">
+      <div class="venus venus__wrapper">
         <div class="item-header">
           <span class="title">YOUR FIRST VENUS</span>
           <span class="subText">穿上它 美在當下</span>
         </div>
-        <!-- 輪播 -->
-        <div class="carousel carousel--leftBorder">
-          <div>
-            <img src="https://fakeimg.pl/375x305/999999" style="width: 100%">
-          </div>
-          <div class="carousel__figcaption carousel__figcaption--gray">
-            <div class="spec">
-              <p class="subTitle">收攏掰掰袖</p>
-              <p class="title">纖臂袖套</p>
+        <!-- Swiper venus -->
+        <div class="venus__group">
+          <div id="swiper_venus" class="swiper swiper__venus">
+            <div class="swiper-wrapper">
+              
+              <!-- 03 -->
+              <div class="swiper-slide swiper-slide--venus">
+                <div class="venus__picture">
+                  <img src="images/venus-3.jpg" style="width: 100%">
+                </div>
+                <div class="venus__figcaption">
+                  <p class="subTitle">美胸挺背</p>
+                  <p class="title">半身束衣</p>
+                </div>
+              </div>
+              <!-- 05 -->
+              <div class="swiper-slide swiper-slide--venus">
+                <div class="venus__picture">
+                  <img src="images/venus-5.jpg" style="width: 100%">
+                </div>
+                <div class="venus__figcaption">
+                  <p class="subTitle">收攏掰掰袖</p>
+                  <p class="title">纖臂袖套</p>
+                </div>
+              </div>              
+              <!-- 04 -->
+              <div class="swiper-slide swiper-slide--venus">
+                <div class="venus__picture">
+                  <img src="images/venus-4.jpg" style="width: 100%">
+                </div>
+                <div class="venus__figcaption">
+                  <p class="subTitle">3D雕塑短褲</p>
+                  <p class="title">蜜桃翹臀</p>
+                </div>
+              </div>
+              <!-- 01 -->
+              <div class="swiper-slide swiper-slide--venus">
+                <div class="venus__picture">
+                  <img src="images/venus-1.jpg" style="width: 100%">
+                </div>
+                <div class="venus__figcaption">
+                  <p class="subTitle">平坦小腹</p>
+                  <p class="title">及膝款塑身衣</p>
+                </div>
+              </div>
+              <!-- 02 -->
+              <div class="swiper-slide swiper-slide--venus">
+                <div class="venus__picture">
+                  <img src="images/venus-2.jpg" style="width: 100%">
+                </div>
+                <div class="venus__figcaption">
+                  <p class="subTitle">修直美腿</p>
+                  <p class="title">腳套</p>
+                </div>
+              </div>
+
             </div>
+            <div class="swiper-button-next swiper-button-next--venus"></div>
+            <div class="swiper-button-prev swiper-button-prev--venus"></div>
           </div>
         </div>
-        <div class="item-footer">
+        <!-- 輪播 -->
+        <div class="item-footer item-footer--venus">
           <a class="btn__custom btn__custom--white" href="#">
             單品試穿
           </a>
@@ -533,26 +583,13 @@
 
               <div class="swiper-slide">
                 <img src="images/star-2.jpg">
-                <div class="text" data-swiper-parallax="-300">
+                <div class="text">
                   <p class="star-text">舒安：產後塑回肚肉，二寶媽也能穿回S號! <a href="">more ></a></p>
                 </div>
               </div>
-              <!-- <div class="swiper-slide">
-                <img src="images/star-2.jpg">
-              </div> -->
             </div>
           </div>
         </div>
-        <!-- <div class="carousel">
-          <div>
-            <img src="https://fakeimg.pl/375x249/999999" style="width: 100%">
-          </div>
-          <div class="carousel__figcaption carousel__figcaption--noPadding carousel__figcaption--gray">
-            <div class="spec">
-              <p class="subTitle">劉馨如Ruby：閨蜜好評推薦，腰內肉收起體態更好看! <a href="">more ></a></p>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
     <div class="s9">
@@ -669,6 +706,42 @@
           //   nextEl: ".swiper-button-next",
           //   prevEl: ".swiper-button-prev",
           // },
+        });
+
+        /** YOUR FIRST VENUS */
+        var swiper = new Swiper("#swiper_venus", {    
+          slidesPerView: 3,
+          centeredSlides: true,
+          loop: true,
+          spaceBetween: 20, 
+          slideToClickedSlide: true,
+          speed: 1500,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1280: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+          },
         });
   </script>
   </body>
