@@ -521,9 +521,9 @@
 }
 .exclusive__group img.mobile__word-4 {
   position: absolute;
-  top: 40%;
-  right: 25px;
-  width: 100px;
+  top: 35%;
+  right: 15px;
+  width: 80px;
   height: auto;
 }
 .exclusive__group img.pc__word-1 {
@@ -1283,23 +1283,23 @@
 }
 .swiper-slide img.mobile__word-1 {
   position: absolute;
-  top: 20%;
-  left: 55px;
-  width: 150px;
+  top: 40%;
+  left: 35px;
+  width: 100px;
   height: auto;
 }
 .swiper-slide img.mobile__word-2 {
   position: absolute;
-  top: 30%;
-  right: 45px;
-  width: 150px;
+  top: 50%;
+  right: 40px;
+  width: 100px;
   height: auto;
 }
 .swiper-slide img.mobile__word-3 {
   position: absolute;
-  top: 20%;
-  left: 55px;
-  width: 150px;
+  top: 40%;
+  left: 25px;
+  width: 100px;
   height: auto;
 }
 
