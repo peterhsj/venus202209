@@ -408,10 +408,12 @@
 }
 .item-footer .circleArrow {
   width: 60px;
+  height: auto;
 }
 @media only screen and (min-width: 768px) {
   .item-footer .circleArrow {
     width: 45px;
+    height: auto;
   }
 }
 

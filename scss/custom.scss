@@ -394,8 +394,10 @@ font-family: system-ui,
   }
   .circleArrow {
     width: 60px;
+    height: auto;
     @include screen ('desktop') {
       width: 45px;
+      height: auto;
     }
   }
 }
