@@ -393,6 +393,11 @@
     padding: 3rem 0 5rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .item-footer--service {
+    padding: 3rem 0 5rem;
+  }
+}
 .item-footer--pc {
   display: none;
 }
@@ -611,6 +616,10 @@
     height: auto;
   }
 }
+.appoint__picture--autoHeight,
+.airfit__picture--autoHeight {
+  height: auto;
+}
 .appoint__picture img,
 .airfit__picture img {
   width: 100%;
@@ -662,12 +671,22 @@
 }
 .appoint__logo,
 .airfit__logo {
-  width: 165px;
+  width: 230px;
 }
 @media only screen and (min-width: 768px) {
   .appoint__logo,
 .airfit__logo {
     width: 320px;
+  }
+}
+.appoint__logo--word,
+.airfit__logo--word {
+  width: 65px;
+}
+@media only screen and (min-width: 768px) {
+  .appoint__logo--word,
+.airfit__logo--word {
+    width: 65px;
   }
 }
 .appoint__form,
@@ -726,6 +745,16 @@
     font-size: 1.125rem;
     font-weight: 900;
     letter-spacing: 0.15rem;
+  }
+}
+.appoint__info .circleArrow,
+.airfit__info .circleArrow {
+  width: 60px;
+}
+@media only screen and (min-width: 768px) {
+  .appoint__info .circleArrow,
+.airfit__info .circleArrow {
+    width: 45px;
   }
 }
 .appoint__slogan,
@@ -787,7 +816,7 @@
 @media only screen and (min-width: 768px) {
   .service__item {
     width: 100%;
-    max-width: 1365px;
+    max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 6rem;
@@ -795,22 +824,21 @@
 }
 .service__info {
   width: 50%;
-  padding-top: 2.5rem;
+  padding-top: 3rem;
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .service__info {
+    padding-top: 5rem;
     width: 25%;
   }
 }
 .service__info img {
-  width: 100px;
-  height: 100%;
+  width: 120px;
 }
 @media only screen and (min-width: 768px) {
   .service__info img {
-    width: 215px;
-    height: 195px;
+    width: 150px;
   }
 }
 .service__info p {

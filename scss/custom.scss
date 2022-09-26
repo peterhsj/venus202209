@@ -381,6 +381,11 @@ font-family: system-ui,
       padding: 3rem 0 5rem;
     }
   }
+  &--service {
+    @include screen('desktop') {
+      padding: 3rem 0 5rem;
+    }
+  }
   &--pc {
     display: none;    
     @include screen ('desktop') {
@@ -584,6 +589,9 @@ $gutter-x:  4rem;
       width: 50%;
       height: auto; 
     }
+    &--autoHeight {
+      height: auto;
+    }
     // 圖片使用 object-fit
     img {
       width: 100%;
@@ -622,9 +630,15 @@ $gutter-x:  4rem;
     }
   }
   &__logo {
-    width: 165px;
+    width: 230px;
     @include screen ('desktop') {
       width: 320px;
+    }
+    &--word {
+      width: 65px;      
+      @include screen ('desktop') {
+        width: 65px;
+      }
     }
   }
   &__form {
@@ -667,6 +681,12 @@ $gutter-x:  4rem;
           font-weight: 900;
           letter-spacing: 0.15rem;
         }
+      }
+    }
+    .circleArrow {
+      width: 60px;
+      @include screen ('desktop') {
+        width: 45px;
       }
     }
   }
@@ -719,7 +739,7 @@ $gutter-x:  4rem;
     justify-content: space-around;
     @include screen('desktop') {
       width: 100%;
-      max-width: 1365px;
+      max-width: 1250px;
       margin-left: auto;
       margin-right: auto;
       padding-bottom: 6rem;
@@ -727,17 +747,16 @@ $gutter-x:  4rem;
   }
   &__info {
     width: 50%;
-    padding-top: 2.5rem;
+    padding-top: 3rem;
     text-align: center;
     @include screen('desktop') {
+      padding-top: 5rem;
       width: 25%;
     }
     img {
-      width: 100px;
-      height: 100%;
+      width: 120px;
       @include screen('desktop') {
-        width: 215px;
-        height: 195px;
+        width: 150px;
       }
     }
     p {
