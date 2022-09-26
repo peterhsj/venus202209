@@ -85,9 +85,6 @@
       </div>
       <!-- Swiper KV-Mobile -->
       <div class="kv__mobile">
-        <!-- <div class="carousel">
-          <img src="https://fakeimg.pl/375x263/DDD" class="img-fluid"  style="width: 100%">
-        </div> -->
         <div id="swiper_kv_mobile" class="swiper kv__mobile">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -238,24 +235,72 @@
           <span class="title">EXCLUSIVE OFFER</span>
           <span class="subText">周年慶特惠組</span>
         </div>
-        <!-- 輪播 -->
+        <!-- Swiper KV-Mobile -->
         <div class="exclusive__group exclusive__group--mobile">
-          <div class=" exclusive__picture">
-            <img src="https://fakeimg.pl/375x263/999999" style="width: 100%">
-          </div>
-          <div class="exclusive__figcaption">
-            <div style="width: 80px;">
-              <img src="images/no-1.jpg">
+          <div id="swiper_exclusive_mobile" class="swiper exclusive__mobile">
+            <div class="swiper-wrapper">
+              <!-- 01 -->
+              <div class="swiper-slide">
+                <div class=" exclusive__picture">
+                  <img src="images/exclusive-pc-1.jpg" style="width: 100%">
+                </div>
+                <div class="exclusive__figcaption">
+                  <div style="width: 80px;">
+                    <img class="exclusive__number" src="images/no-1.jpg">
+                  </div>
+                  <div class="spec spec--padding">
+                    <p class="subTitle subTitle--spacing">輕‧薄‧透‧舒</p>
+                    <p class="title title--marginBottom">Philia 560 Den及膝款</p>
+                    <p class="discount">
+                      現省＄9,000
+                      <br>
+                      腰、腹、臀曲線回歸
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- 02 -->
+              <div class="swiper-slide">
+                <div class=" exclusive__picture">
+                  <img src="images/exclusive-pc-1.jpg" style="width: 100%">
+                </div>
+                <div class="exclusive__figcaption">
+                  <div style="width: 80px;">
+                    <img class="exclusive__number" src="images/no-2.jpg">
+                  </div>
+                  <div class="spec spec--padding">
+                    <p class="subTitle subTitle--spacing">輕‧薄‧透‧舒</p>
+                    <p class="title title--marginBottom">Philia 560 Den及膝款</p>
+                    <p class="discount">
+                      現省＄9,000
+                      <br>
+                      腰、腹、臀曲線回歸
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- 03 -->
+              <div class="swiper-slide">
+                <div class="exclusive__picture">
+                  <img src="images/exclusive-pc-1.jpg" style="width: 100%">
+                </div>
+                <div class="exclusive__figcaption">
+                  <div style="width: 80px;">
+                    <img class="exclusive__number" src="images/no-3.jpg">
+                  </div>
+                  <div class="spec spec--padding">
+                    <p class="subTitle subTitle--spacing">輕‧薄‧透‧舒</p>
+                    <p class="title title--marginBottom">Philia 560 Den及膝款</p>
+                    <p class="discount">
+                      現省＄9,000
+                      <br>
+                      腰、腹、臀曲線回歸
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="spec spec--padding">
-              <p class="subTitle subTitle--spacing">輕‧薄‧透‧舒</p>
-              <p class="title title--marginBottom">Philia 560 Den及膝款</p>
-              <p class="discount">
-                現省＄9,000
-                <br>
-                腰、腹、臀曲線回歸
-              </p>
-            </div>
+            <div class="swiper-pagination swiper-pagination--exclusive"></div>
           </div>
           <div class="item-footer">
             <a class="btn__custom btn__custom--white" href="#">
@@ -266,11 +311,11 @@
         <!-- 04 mobile -->
         <div class="exclusive__group exclusive__group--mobile">
           <div class=" exclusive__picture">
-            <img src="https://fakeimg.pl/375x263/999999" style="width: 100%">
+            <img src="images/exclusive-pc-4.jpg" style="width: 100%">
           </div>
           <div class="exclusive__figcaption">
             <div style="width: 80px;">
-              <img src="images/no-4.jpg">
+              <img class="exclusive__number" src="images/no-4.jpg">
             </div>
             <div class="spec spec--padding">
               <p class="subTitle subTitle--spacing">輕‧薄‧透‧舒</p>
@@ -330,13 +375,13 @@
             </div>
           </div>
           <div class="exclusive__picture">
-            <img src="https://picsum.photos/1108/620?random=1" style="width: 100%">
+            <img src="images/exclusive-pc-2.jpg">
           </div>
         </div>
         <!-- 03 -->
         <div class="exclusive__group exclusive__group--pc">
           <div class="exclusive__picture">
-            <img src="https://picsum.photos/1108/620?random=1" style="width: 100%">
+            <img src="images/exclusive-pc-3.jpg">
           </div>
           <div class="exclusive__figcaption">
             <div class="exclusive__figcaption--group">
@@ -359,7 +404,7 @@
         <!-- 04 -->
         <div class="exclusive__group exclusive__group--pc noPadding exclusive__group--noPadding">
           <div class="exclusive__picture"> 
-            <img src="https://picsum.photos/1108/620?random=1" style="width: 100%">
+            <img src="images/exclusive-pc-4.jpg">
           </div>
           <div class="exclusive__figcaption">
             <div class="exclusive__figcaption--group">
@@ -468,13 +513,37 @@
       </div>
     </div>
     <div class="s8">
-      <div class="carousel carousel__wrapper carousel__wrapper--gutter">
-        <div class="item-header">
+      <div class="star">
+        <div class="item-header item-header--star">
           <span class="title">VENUS STAR</span>
           <span class="subText">時尚百搭 | 定格完美曲線的秘密</span>
         </div>
         <!-- 輪播 -->
-        <div class="carousel">
+        <!-- Swiper star -->
+        <div class="swiper__star">
+          <div id="swiper_star" class="swiper">
+            <div class="swiper-pagination swiper-pagination--star"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/star-1.jpg">
+                <div class="text">
+                  <p class="star-text">劉馨如Ruby：閨蜜好評推薦，腰內肉收起體態更好看! <a href="">more ></a></p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/star-2.jpg">
+                <div class="text" data-swiper-parallax="-300">
+                  <p class="star-text">舒安：產後塑回肚肉，二寶媽也能穿回S號! <a href="">more ></a></p>
+                </div>
+              </div>
+              <!-- <div class="swiper-slide">
+                <img src="images/star-2.jpg">
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <!-- <div class="carousel">
           <div>
             <img src="https://fakeimg.pl/375x249/999999" style="width: 100%">
           </div>
@@ -483,7 +552,7 @@
               <p class="subTitle">劉馨如Ruby：閨蜜好評推薦，腰內肉收起體態更好看! <a href="">more ></a></p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="s9">
@@ -563,6 +632,44 @@
         //   prevEl: ".swiper-button-prev",
         // },
       });
+
+      var swiper = new Swiper("#swiper_star", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        speed: 1500,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+      });
+
+      var swiper = new Swiper("#swiper_exclusive_mobile", {
+          spaceBetween: 0,
+          centeredSlides: true,
+          loop: true,
+          speed: 1500,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          // navigation: {
+          //   nextEl: ".swiper-button-next",
+          //   prevEl: ".swiper-button-prev",
+          // },
+        });
   </script>
   </body>
 </html>
