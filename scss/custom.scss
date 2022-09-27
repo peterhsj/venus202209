@@ -350,13 +350,13 @@ font-family: system-ui,
     }
   }
   .title {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
     font-weight: 900;
     font-family: Arial;
-    letter-spacing: 0.025em;
     @include screen('desktop') {
+      font-size: 1.625rem;
+      font-weight: 900;
       font-size: 4rem;
-      letter-spacing: 0;
     }
   }
   .subText {
@@ -922,9 +922,6 @@ $gutter-x:  4rem;
       &--left {
         padding-left: 1.5rem;
       }
-      // &--right {
-      //   padding-right: 1.5rem;
-      // }
       p {
         margin-bottom: 1rem;
         font-size: 0.9rem;
@@ -952,7 +949,7 @@ $gutter-x:  4rem;
       padding-right: 0.4rem;
       font-size: 0.7rem;
       line-height: 1.5;
-      font-weight: 700;
+      font-weight: 300;
       color: #bebebe;
       @include screen ('desktop') {
         font-size: 0.875rem;
@@ -1235,4 +1232,7 @@ $gutter-x:  4rem;
       left: calc(30% + 20px);
     }
   }
+}
+.fontThin {
+  font-weight: 400;
 }

@@ -357,15 +357,15 @@
   }
 }
 .item-header .title {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   font-weight: 900;
   font-family: Arial;
-  letter-spacing: 0.025em;
 }
 @media only screen and (min-width: 768px) {
   .item-header .title {
+    font-size: 1.625rem;
+    font-weight: 900;
     font-size: 4rem;
-    letter-spacing: 0;
   }
 }
 .item-header .subText {
@@ -1042,7 +1042,7 @@
   padding-right: 0.4rem;
   font-size: 0.7rem;
   line-height: 1.5;
-  font-weight: 700;
+  font-weight: 300;
   color: #bebebe;
 }
 @media only screen and (min-width: 768px) {
@@ -1361,4 +1361,8 @@
     display: flex;
     left: calc(30% + 20px);
   }
+}
+
+.fontThin {
+  font-weight: 400;
 }/*# sourceMappingURL=custom.css.map */
