@@ -43,10 +43,10 @@ var swiper = new Swiper("#swiper_exclusive_mobile", {
   centeredSlides: true,
   loop: true,
   speed: 1500,
-  // autoplay: {
-  //   delay: 4000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -88,3 +88,13 @@ var swiper = new Swiper("#swiper_venus", {
     },
   },
 });
+
+/**
+ * 試用捲動
+*/
+function scrolltoTarget() {
+  const target = document.querySelector('#appointment');
+  let oPos = target.offsetTop - (50 * document.documentElement.clientWidth / 375);
+  document.documentElement.scrollTop = oPos;
+  document.body.scrollTop = oPos;
+}

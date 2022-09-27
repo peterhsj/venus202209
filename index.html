@@ -15,7 +15,7 @@
     <link href="assets/fontawesome/css/light.css" rel="stylesheet">
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="css/navbar-top-fixed.css" rel="stylesheet">
     <link href="css/media-query.css" rel="stylesheet">
@@ -35,7 +35,7 @@
           <!-- 社群按鈕 -->
           <div class="social__wrapper">
             <div class="order">
-              <a class="btn__custom btn__custom--gray" href="#">預約解放</a>
+              <a class="btn__custom btn__custom--gray" href="javascript:void(0)" onclick="scrolltoTarget()">預約解放</a>
             </div>
             <div class="social__Icon">
               <a href="https://www.facebook.com/VENUSSECRET/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -138,7 +138,8 @@
         </div>
         <div class="appoint__picture appoint__picture--mobile">
           <img src="images/appoint-mobile.jpg">
-        </div>      
+        </div>    
+        <a name="appointment" id="appointment"></a>  
         <div class="appoint__infoGroup">
           <div class="appoint__form">
             <div class="item-header item-header--form">
@@ -220,7 +221,7 @@
                 </div>
               </div>
               <div class="item-footer item-footer__form">
-                <a id="submit_btn" class="btn__custom btn__custom--grayBorder" href="javascript:;" onclick="javascript:checkForm(); return false;">
+                <a id="submit_btn" class="btn__custom btn__custom--grayBorder" href="#">
                   預約解放
                 </a>
               </div>
@@ -292,7 +293,7 @@
                     <img class="exclusive__number" src="images/no-3.jpg">
                   </div>
                   <div class="spec spec--padding">
-                    <p class="subTitle subTitle--spacing">產後穿回 S 號必備</p>
+                    <p class="subTitle subTitle--spacing">產後穿回S號必備</p>
                     <p class="title title--marginBottom">推推指塑身衣 x 3 (及膝款)</p>
                     <p class="discount">
                       現省 <span class="fontThin">$31,600</span><br>
@@ -307,7 +308,7 @@
             <div class="swiper-pagination swiper-pagination--exclusive"></div>
           </div>
           <div class="item-footer">
-            <a class="btn__custom btn__custom--white" href="#">
+            <a class="btn__custom btn__custom--white" href="javascript:void(0)" onclick="scrolltoTarget()">
               預約解放
             </a>
           </div>
@@ -333,7 +334,7 @@
             </div>
           </div>
           <div class="item-footer">
-            <a class="btn__custom btn__custom--white" href="#">
+            <a class="btn__custom btn__custom--white"  href="javascript:void(0)" onclick="scrolltoTarget()">
               預約解放
             </a>
           </div>
@@ -434,7 +435,7 @@
         </div>
       </div>
       <div class="item-footer item-footer__exclusive item-footer--pc">
-        <a class="btn__custom btn__custom--white" href="#">
+        <a class="btn__custom btn__custom--white" href="javascript:void(0)" onclick="scrolltoTarget()">
           預約解放
         </a>
       </div>
@@ -455,7 +456,7 @@
               <p class="subTitle">比美更美　比輕更輕</p>
             </div>
             <div class="item-footer">
-              <a class="circleArrow" href="#"></a>
+              <a class="circleArrow" href="javascript:void(0)" onclick="scrolltoTarget()"></a>
             </div>          
           </div>
         </div>
@@ -532,7 +533,7 @@
         </div>
         <!-- 輪播 -->
         <div class="item-footer item-footer--venus">
-          <a class="btn__custom btn__custom--white" href="#">
+          <a class="btn__custom btn__custom--white" href="javascript:void(0)" onclick="scrolltoTarget()">
             單品試穿
           </a>
         </div>
@@ -564,7 +565,7 @@
           </div>
         </div>
         <div class="item-footer item-footer--service">
-          <a class="btn__custom btn__custom--white" href="#">
+          <a class="btn__custom btn__custom--white" href="javascript:void(0)" onclick="scrolltoTarget()">
             預約試穿
           </a>
         </div>
