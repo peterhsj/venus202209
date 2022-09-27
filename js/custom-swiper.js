@@ -65,10 +65,10 @@ var swiper = new Swiper("#swiper_venus", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // autoplay: {
-  //   delay: 4000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
