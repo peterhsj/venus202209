@@ -17,6 +17,11 @@ font-family: system-ui,
   "Segoe UI Symbol",
   "Noto Color Emoji"
 }
+.navbar-toggler {
+  &__venus {
+    border-width: 0;
+  }
+}
 .kv {
   &__pc {
     display: none;
