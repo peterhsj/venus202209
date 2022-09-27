@@ -23,7 +23,7 @@ var swiper = new Swiper("#swiper_kv_mobile", {
 
 /** VENUS STAR */
 var swiper = new Swiper("#swiper_star", {
-  spaceBetween: 0,
+  spaceBetween: 20,
   centeredSlides: true,
   loop: true,
   speed: 1500,
@@ -90,7 +90,7 @@ var swiper = new Swiper("#swiper_venus", {
 });
 
 /**
- * 試用捲動
+ * 預約表單捲動
 */
 function scrolltoTarget() {
   const target = document.querySelector('#appointment');

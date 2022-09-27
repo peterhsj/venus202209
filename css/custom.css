@@ -362,19 +362,19 @@
 }
 .item-header .title {
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 700;
   font-family: Arial;
 }
 @media only screen and (min-width: 768px) {
   .item-header .title {
     font-size: 1.625rem;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 4rem;
   }
 }
 .item-header .subText {
   font-size: 0.9rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.075em;
 }
 @media only screen and (min-width: 768px) {
@@ -384,7 +384,7 @@
 }
 .item-header .formTitle {
   font-size: 1.625rem;
-  font-weight: 900;
+  font-weight: 700;
   font-family: Arial;
   letter-spacing: 0.025em;
 }
@@ -630,7 +630,7 @@
 .exclusive__figcaption .title {
   margin-bottom: 0;
   font-size: 1.3125rem;
-  font-weight: 900;
+  font-weight: 700;
   font-family: Arial;
   letter-spacing: 0.025em;
 }
@@ -647,7 +647,7 @@
   font-size: 0.875rem;
   font-weight: 900;
   font-family: Arial;
-  letter-spacing: 0.125em;
+  letter-spacing: 0.125rem;
 }
 @media only screen and (min-width: 768px) {
   .exclusive__figcaption .subTitle {
@@ -656,7 +656,10 @@
   }
 }
 .exclusive__figcaption .subTitle--spacing {
-  letter-spacing: 0.5em;
+  letter-spacing: 0.5rem;
+}
+.exclusive__figcaption .subTitle--spacing .fontThin {
+  letter-spacing: 0;
 }
 .exclusive__figcaption .subTitle a {
   padding-left: 0.5rem;
@@ -1050,6 +1053,7 @@
   line-height: 1.5;
   font-weight: 300;
   color: #bebebe;
+  color: #828282;
 }
 @media only screen and (min-width: 768px) {
   .s2 .promote__note {
@@ -1204,6 +1208,10 @@
 .s8 .star-text a :hover {
   color: #333333;
 }
+.s8 .star-text a i {
+  font-size: 0.875rem;
+  vertical-align: middle;
+}
 @media only screen and (min-width: 768px) {
   .s8 .star-text a {
     height: 40px;
@@ -1230,7 +1238,7 @@
   .swiper__star {
     max-width: calc(1140px - 30%);
     width: 100%;
-    padding-top: 5.5rem;
+    padding-top: 5.3rem;
     margin-left: 30%;
     margin-right: auto;
   }

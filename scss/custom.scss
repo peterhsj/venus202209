@@ -356,17 +356,17 @@ font-family: system-ui,
   }
   .title {
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 700;
     font-family: Arial;
     @include screen('desktop') {
       font-size: 1.625rem;
-      font-weight: 900;
+      font-weight: 700;
       font-size: 4rem;
     }
   }
   .subText {
     font-size: 0.9rem;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 0.075em;
     @include screen('desktop') {
       font-size: 1rem;
@@ -374,7 +374,7 @@ font-family: system-ui,
   }
   .formTitle {
     font-size: 1.625rem;
-    font-weight: 900;
+    font-weight: 700;
     font-family: Arial;
     letter-spacing: 0.025em;
     @include screen('desktop') {
@@ -606,7 +606,7 @@ $gutter-x:  4rem;
     .title {
       margin-bottom: 0;
       font-size: 1.3125rem;
-      font-weight: 900;
+      font-weight: 700;
       font-family: Arial;
       letter-spacing: 0.025em;
       @include screen ('desktop') {
@@ -621,13 +621,16 @@ $gutter-x:  4rem;
       font-size: 0.875rem;
       font-weight: 900;
       font-family: Arial;
-      letter-spacing: 0.125em;
+      letter-spacing: 0.125rem;
       @include screen ('desktop') {
         padding-top: 30px;
         font-size: 1.3125rem;
       }
       &--spacing {
-        letter-spacing: 0.5em;
+        letter-spacing: 0.5rem;
+        .fontThin {
+          letter-spacing: 0;
+        }
       }
       a {
         padding-left: 0.5rem;
@@ -958,6 +961,7 @@ $gutter-x:  4rem;
       line-height: 1.5;
       font-weight: 300;
       color: #bebebe;
+      color: #828282;
       @include screen ('desktop') {
         font-size: 0.875rem;
       }
@@ -1075,13 +1079,14 @@ $gutter-x:  4rem;
     letter-spacing: 0.0875rem;
     a {
       padding-left: 10px;
-      // font-size: 1.4rem;
-      // line-height: 1;
       text-decoration: none;
-      color: #80858A;
-  
+      color: #80858A;  
       :hover {
         color: #333333;
+      }
+      i {
+        font-size: 0.875rem;
+        vertical-align: middle;
       }
   
       @include screen('desktop') {
@@ -1107,7 +1112,7 @@ $gutter-x:  4rem;
     @include screen ('desktop') {
       max-width: calc(1140px - 30%);
       width: 100%;
-      padding-top: 5.5rem;
+      padding-top: 5.3rem;
       margin-left: 30%;
       margin-right: auto;
     }
