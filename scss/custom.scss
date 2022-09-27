@@ -617,13 +617,13 @@ $gutter-x:  4rem;
         display: flex;
         flex-direction: column;
         &--padding {
-          padding-left: 1rem;
+          padding-left: 0.6rem;
         }
       }
     }
     .title {
       margin-bottom: 0;
-      font-size: 1.3125rem;
+      font-size: 1.25rem;
       font-weight: 700;
       font-family: Arial;
       letter-spacing: 0.025em;
