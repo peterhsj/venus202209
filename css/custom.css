@@ -103,7 +103,7 @@
   }
 }
 .social__wrapper--footer {
-  padding: 3rem 3rem 1rem;
+  padding: 3rem 1rem 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -168,7 +168,12 @@
 }
 .social__shop--branch--group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.social__shop--branch--group p {
+  width: 50%;
+  font-size: 0.9rem;
 }
 @media only screen and (min-width: 768px) {
   .social__shop--branch--group {
@@ -176,15 +181,22 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
-.social__shop--branch--group p {
-  padding-right: 25px;
+  .social__shop--branch--group p {
+    padding-right: 25px;
+    font-size: 16px;
+  }
 }
 .social__shop--title {
   font-weight: 900;
 }
 .social__shop p {
   line-height: 2;
+  letter-spacing: 0;
+}
+@media only screen and (min-width: 768px) {
+  .social__shop p {
+    letter-spacing: 2px;
+  }
 }
 .social__shop p.social__shop--title {
   line-height: 1;
@@ -992,7 +1004,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 40px 0 30px;
-  max-width: 85%;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
 }
@@ -1021,7 +1033,7 @@
   flex-grow: 1;
 }
 .s2 .promote__item--left {
-  padding-left: 1.5rem;
+  padding-left: 0.2rem;
 }
 .s2 .promote__item p {
   margin-bottom: 1rem;
@@ -1047,12 +1059,10 @@
 .s2 .promote__note {
   margin-bottom: 1rem;
   margin-top: 0.5rem;
-  padding-left: 0.4rem;
   padding-right: 0.4rem;
   font-size: 0.7rem;
   line-height: 1.5;
   font-weight: 300;
-  color: #bebebe;
   color: #828282;
 }
 @media only screen and (min-width: 768px) {
@@ -1062,6 +1072,7 @@
 }
 .s2 .promote__note ol {
   margin-bottom: 0;
+  padding-left: 1rem;
 }
 
 .s3 {

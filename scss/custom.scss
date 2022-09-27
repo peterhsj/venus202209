@@ -115,7 +115,7 @@ font-family: system-ui,
       }
     }
     &--footer {
-      padding: 3rem 3rem 1rem;
+      padding: 3rem 1rem 1rem;
       display: flex;
       flex-direction: column;
       @include screen ('desktop') {
@@ -172,14 +172,20 @@ font-family: system-ui,
       padding-right: 15px;
       &--group {
         display: flex;
-        flex-direction: column;      
+        flex-direction: row;
+        flex-wrap: wrap;
+        p {
+          width: 50%;
+          font-size: 0.9rem;
+        }
         @include screen ('desktop') {
           padding: 0;
           flex-direction: row;
           flex-wrap: wrap;
-        }
-        p {
-          padding-right: 25px;
+          p {
+            padding-right: 25px;
+            font-size: 16px;
+          }
         }
       }
     }
@@ -188,6 +194,10 @@ font-family: system-ui,
     }
     p {
       line-height: 2;
+      letter-spacing: 0;
+      @include screen ('desktop') {
+        letter-spacing: 2px;
+      }
       &.social__shop--title {
         line-height: 1;
       }
@@ -907,7 +917,7 @@ $gutter-x:  4rem;
     margin-left: auto;
     margin-right: auto;
     padding: 40px 0 30px;
-    max-width: 85%;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     @include screen ('desktop') {
@@ -930,7 +940,7 @@ $gutter-x:  4rem;
     &__item {
       flex-grow: 1;
       &--left {
-        padding-left: 1.5rem;
+        padding-left: 0.2rem;
       }
       p {
         margin-bottom: 1rem;
@@ -955,18 +965,17 @@ $gutter-x:  4rem;
     &__note {
       margin-bottom: 1rem;
       margin-top: 0.5rem;
-      padding-left: 0.4rem;
       padding-right: 0.4rem;
       font-size: 0.7rem;
       line-height: 1.5;
       font-weight: 300;
-      color: #bebebe;
       color: #828282;
       @include screen ('desktop') {
         font-size: 0.875rem;
       }
       ol {
         margin-bottom: 0;
+        padding-left: 1rem;
       }
     }
   }
