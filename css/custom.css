@@ -571,6 +571,7 @@
   }
 }
 .exclusive__figcaption {
+  height: 335px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
