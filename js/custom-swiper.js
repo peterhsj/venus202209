@@ -5,7 +5,7 @@ var swiper = new Swiper("#swiper_kv_pc", {
   loop: true,
   speed: 1500,
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   }
 });
@@ -16,7 +16,7 @@ var swiper = new Swiper("#swiper_kv_mobile", {
   loop: true,
   speed: 1500,
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   }
 });
@@ -28,7 +28,7 @@ var swiper = new Swiper("#swiper_star", {
   loop: true,
   speed: 1500,
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -43,10 +43,10 @@ var swiper = new Swiper("#swiper_exclusive_mobile", {
   centeredSlides: true,
   loop: true,
   speed: 1500,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -66,7 +66,7 @@ var swiper = new Swiper("#swiper_venus", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
