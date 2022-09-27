@@ -591,7 +591,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 2.5rem 2rem 2rem;
+  padding: 2.5rem 1.5rem 2rem;
   background-color: #FFFFFF;
 }
 @media only screen and (min-width: 768px) {
@@ -632,6 +632,10 @@
 .exclusive__figcaption--noPadding {
   padding: 0.5rem;
 }
+.exclusive__figcaption img.exclusive__number {
+  width: 60px;
+  height: auto;
+}
 .exclusive__figcaption div.spec {
   display: flex;
   flex-direction: column;
@@ -657,21 +661,15 @@
 .exclusive__figcaption .subTitle {
   margin-bottom: 0;
   font-size: 0.875rem;
-  font-weight: 900;
+  font-weight: 700;
   font-family: Arial;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.25rem;
 }
 @media only screen and (min-width: 768px) {
   .exclusive__figcaption .subTitle {
     padding-top: 30px;
     font-size: 1.3125rem;
   }
-}
-.exclusive__figcaption .subTitle--spacing {
-  letter-spacing: 0.5rem;
-}
-.exclusive__figcaption .subTitle--spacing .fontThin {
-  letter-spacing: 0;
 }
 .exclusive__figcaption .subTitle a {
   padding-left: 0.5rem;
@@ -1303,8 +1301,8 @@
      object-fit: cover;
 }
 .swiper-slide img.exclusive__number {
-  width: 75px;
-  height: 100px;
+  width: 60px;
+  height: auto;
 }
 .swiper-slide img.mobile__word-1 {
   position: absolute;

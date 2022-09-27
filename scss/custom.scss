@@ -570,7 +570,7 @@ $gutter-x:  4rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 2.5rem 2rem 2rem;
+    padding: 2.5rem 1.5rem 2rem;
     background-color: #FFFFFF;
     @include screen ('desktop') {
       height: auto;
@@ -604,6 +604,14 @@ $gutter-x:  4rem;
     &--noPadding {
       padding: 0.5rem;
     }
+    img {
+      &.exclusive {
+        &__number {
+          width: 60px;
+          height: auto;
+        }
+      }
+    }
     div {
       &.spec {
         display: flex;
@@ -629,19 +637,19 @@ $gutter-x:  4rem;
     .subTitle {
       margin-bottom: 0;
       font-size: 0.875rem;
-      font-weight: 900;
+      font-weight: 700;
       font-family: Arial;
-      letter-spacing: 0.125rem;
+      letter-spacing: 0.25rem;
       @include screen ('desktop') {
         padding-top: 30px;
         font-size: 1.3125rem;
       }
-      &--spacing {
-        letter-spacing: 0.5rem;
-        .fontThin {
-          letter-spacing: 0;
-        }
-      }
+      // &--spacing {
+      //   letter-spacing: 0.25rem;
+      //   .fontThin {
+      //     letter-spacing: 0;
+      //   }
+      // }
       a {
         padding-left: 0.5rem;
         text-decoration: none;
@@ -1171,8 +1179,8 @@ $gutter-x:  4rem;
     object-fit: cover;
 
     &.exclusive__number {
-      width: 75px;
-      height: 100px;
+      width: 60px;
+      height: auto;
     }
 
     &.mobile {
