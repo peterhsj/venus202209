@@ -563,6 +563,7 @@ $gutter-x:  4rem;
     padding: 2.5rem 2rem 2rem;
     background-color: #FFFFFF;
     @include screen ('desktop') {
+      height: auto;
       margin-left: auto;
       margin-right: auto;
       padding: 2.5rem 2rem 3rem;

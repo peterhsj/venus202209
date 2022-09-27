@@ -584,6 +584,7 @@
 }
 @media only screen and (min-width: 768px) {
   .exclusive__figcaption {
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     padding: 2.5rem 2rem 3rem;
