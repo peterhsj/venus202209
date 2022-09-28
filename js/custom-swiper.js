@@ -100,16 +100,22 @@ function scrolltoTarget() {
 }
 
 /**
- * 偵測頁面捲動
+ * Jquery 偵測頁面捲動
 */
-// const earthImg = document.querySelector("#star")
-// function earthmove() {
-//   const moveToNextAt = (earthImg.offsetTop) + (earthImg.clientHeight / 2);
-//   console.log({ moveToNextAt });
-//   if (window.scrollY > moveToNextAt) {
-//     earthImg.classList.add('move');
-//   } else {
-//     earthImg.classList.remove('move');
-//   }
-// }
-// window.addEventListener('scroll', debounce(earthmove, 5));
+$(function () {
+  $(window).on('scroll', () => {
+    const starHeight = $('#star').offset().top;
+    const bodyWidth = $(window).width();
+    let scrollHeight = $(document).scrollTop();
+
+    if ( bodyWidth <= 751) {
+      $('#header-icon').hide();
+    } else {
+      if (scrollHeight > starHeight) {
+        $('#header-icon').hide();
+      } else {
+        $('#header-icon').show();
+      }
+    }
+  })
+})
