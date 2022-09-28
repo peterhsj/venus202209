@@ -102,14 +102,14 @@ function scrolltoTarget() {
 /**
  * 偵測頁面捲動
 */
-const earthImg = document.querySelector("#star")
-function earthmove() {
-  const moveToNextAt = (earthImg.offsetTop) + (earthImg.clientHeight / 2);
-  console.log({ moveToNextAt });
-  if (window.scrollY > moveToNextAt) {
-    earthImg.classList.add('move');
-  } else {
-    earthImg.classList.remove('move');
-  }
-}
-window.addEventListener('scroll', debounce(earthmove, 5));
+// const earthImg = document.querySelector("#star")
+// function earthmove() {
+//   const moveToNextAt = (earthImg.offsetTop) + (earthImg.clientHeight / 2);
+//   console.log({ moveToNextAt });
+//   if (window.scrollY > moveToNextAt) {
+//     earthImg.classList.add('move');
+//   } else {
+//     earthImg.classList.remove('move');
+//   }
+// }
+// window.addEventListener('scroll', debounce(earthmove, 5));
